@@ -128,16 +128,16 @@ const translations = {
     },
     ku: {
         title: "پلاتفۆرما ئاگەهداریێن قوتابخانێ",
-        subtitle: "ب ساهی نامەیێن واتسئاپێ بۆ سمیانێن قوتابیان بەرهەڤ بکە و فرێبکە",
+        subtitle: "ب ساناهی نامەیێن واتسئاپێ بۆ سمیانێن قوتابییان بەرهەڤ بکە و فرێ بکە",
         lbl_student_name: "<i class='fa-solid fa-user-graduate'></i> ناڤێ قوتابی",
-        ph_student_name: "ناڤێ قوتابی یێ سێقۆڵی بنڤیسە",
+        ph_student_name: "ناڤێ قوتابیی یێ سێقۆڵی بنڤیسە",
         lbl_student_class: "<i class='fa-solid fa-chalkboard-user'></i> پۆل",
         ph_student_class: "نموونە: حەفتێ بنەڕەتی",
         lbl_student_section: "<i class='fa-solid fa-layer-group'></i> هۆبە",
         ph_student_section: "نموونە: أ",
-        lbl_parent_number: "<i class='fa-solid fa-phone'></i> ژمارا واتسئاپا سمیانی",
+        lbl_parent_number: "<i class='fa-solid fa-phone'></i> ژمارەیا واتسئاپا سمیانی",
         ph_parent_number: "نموونە: +9647XXXXXXXXX",
-        hint_parent_number: "هیڤییە ژمارێ دگەل کۆدێ وەلاتی بنڤیسە (وەک +964 بۆ عێراقێ)",
+        hint_parent_number: "هیڤیدارین ژمارەیێ دگەل کۆدێ وەلاتی بنڤیسە (وەک +964 بۆ عێراقێ)",
         lbl_event_date: "<i class='fa-solid fa-calendar-days'></i> رێکەفتا سەرەدانێ",
         lbl_event_time: "<i class='fa-solid fa-clock'></i> دەمێ سەرەدانێ",
         lbl_reason: "<i class='fa-solid fa-list-check'></i> ئەگەرێ ئاگەهداریێ (ئێکێ هەلبژێرە)",
@@ -146,25 +146,25 @@ const translations = {
         reason_lowGrades: "نمرەیێن نزم",
         reason_goodBehavior: "رەفتارا باش",
         reason_highGrades: "نمرێن بلند",
-        reason_fight: "شەڕ ل قوتابخانێ",
+        reason_fight: "شەڕکرن ل قوتابخانێ",
         reason_reward: "پاداشت / رێزلێنان",
-        reason_meeting: "بانگهێشتنا جڤینێ",
+        reason_meeting: "بانگهێشتکرن بۆ کۆمبوونێ",
         reason_late: "درەنگ هاتن",
-        reason_homework: "نەکرنا ئەرکێن مال",
+        reason_homework: "ئەنجام نەدانا ئەرکێن مال",
         reason_phone: "ئینانا مۆبایلێ",
         reason_uniform: "نەپێگیری ب جلوبەرگان",
-        reason_cheating: "فێلبازیکرن",
+        reason_cheating: "کۆپیکرن (غشکرن)",
         reason_vandalism: "تێکدانا کەلوپەلان",
         reason_truancy: "رەڤین ژ قوتابخانێ",
         reason_books: "نەئینانا پەرتووکان",
-        reason_bullying: "بێزارکرن",
-        reason_sleeping: "خەوتن ل پۆلێ",
+        reason_bullying: "زۆرداری کرن",
+        reason_sleeping: "نڤستن ل پۆلێ",
         reason_hygiene: "نەپاقژی",
-        reason_profanity: "ئاخفتنێن نەجوان",
-        reason_smoking: "جکەرەکێشان",
+        reason_profanity: "ئاخفتنێن نەجوان و کرێت",
+        reason_smoking: "جگارە کێشان",
         reason_leave_early: "دەرکەفتن بەری دووماهی هاتنێ",
         reason_participation: "نەپشکداریکرن",
-        reason_forbidden: "تشتێن قەدەغەکری",
+        reason_forbidden: "ئینانا تشتێن قەدەغەکری",
         reason_health: "نەخۆشی",
         reason_trip: "گەشتا زانستی",
         reason_fees: "پارەیێ قوتابخانێ",
@@ -175,40 +175,51 @@ const translations = {
         reason_activity: "پشکداریکرن د چالاکیەکێ دا",
         reason_late_pickup: "درەنگ وەرگرتنا قوتابی",
         reason_bus_issue: "کێشە د ڤەگوهاستنێ دا",
+    reason_forgot_id: "نەپێڤەکرنا ناسنامەیێ",
+    reason_disrespect_teacher: "رێزنەگرتنا مامۆستای",
+    reason_lack_focus: "کێم تەرکیزی",
+    reason_eating_in_class: "خوارن د ناڤ پۆلێ دا",
+    reason_chewing_gum: "جووینا بنیشتی",
+    reason_failing_exam: "دەرنەچوون د ئەزموونێ دا",
+    reason_damaging_books: "تێکدانا پەرتووکان",
+    reason_makeup_accessories: "بکارئینانا تشتێن نەگونجای (مکیاج)",
+    reason_hallway_noise: "دەنگەدەنگ د مەمەڕان دا",
+    reason_leave_class_no_permission: "دەرکەفتن بێی دەستویریێ",
+
         
         // --- Teachers ---
-        mode_students: "<i class='fa-solid fa-user-graduate'></i> بەشێ قوتابیان",
-        mode_teachers: "<i class='fa-solid fa-chalkboard-user'></i> ئاگەهداریا مامۆستای",
+        mode_students: "<i class='fa-solid fa-user-graduate'></i> بەشێ قوتابییان",
+        mode_teachers: "<i class='fa-solid fa-chalkboard-user'></i> ئاگەهدارکرنا مامۆستای",
         lbl_teacher_name: "<i class='fa-solid fa-chalkboard-user'></i> ناڤێ مامۆستای",
-        ph_teacher_name: "ناڤێ مامۆستای یێ سێقۆڵی بنڤیسە",
+        ph_teacher_name: "ناڤێ مامۆستایی یێ سێقۆڵی بنڤیسە",
         lbl_teacher_subject: "<i class='fa-solid fa-book'></i> بابەتێ وانەیێ",
         ph_teacher_subject: "نموونە: بیرکاری",
-        lbl_teacher_number: "<i class='fa-solid fa-phone'></i> ژمارا تەلەفۆنا مامۆستای",
+        lbl_teacher_number: "<i class='fa-solid fa-phone'></i> ژمارەیا مامۆستای",
         ph_teacher_number: "نموونە: +9647XXXXXXXXX",
         btn_manage_teachers: "رێڤەبرنا مامۆستایان",
         modal_manage_teachers_title: "رێڤەبرنا مامۆستایان",
         reason_t_absence: "ئامادەنەبوون",
         reason_t_late: "درەنگ کەفتن",
-        reason_t_meeting: "بانگهێشتنا جڤینێ",
+        reason_t_meeting: "بانگهێشتکرن بۆ کۆمبوونێ",
         reason_t_duty: "ئەرکێ چاڤدێریێ",
         reason_t_thanks: "سوپاس و پێزانین",
         reason_t_violation: "پێشێلکرنا رێنمایان",
         reason_t_grades: "رادەستکرنا نمرەیان",
-        reason_t_notice: "ئاگەهداری پێدڤی",
+        reason_t_notice: "ئاگەهدارییەکا پێدڤی",
         reason_t_exam_questions: "رادەستکرنا پرسیارێن ئەزموونان",
         reason_t_lesson_plan: "پلانا وانەیێ",
         reason_t_class_management: "رێڤەبرنا پۆلێ",
         reason_t_parent_meeting: "دیدار دگەل سمیانان",
         reason_t_training: "خولا راهێنانێ",
         reason_t_activity_supervision: "سەرپەرشتیا چالاکیەکێ",
-        reason_t_student_issue: "کێشەیا قوتابیەکێ",
-        reason_t_excellent_performance: "ئاستێ نایاب د وانەگوتنێ دا",
+        reason_t_student_issue: "کێشەیا قوتابییەکێ",
+        reason_t_excellent_performance: "ئاستێ نایاب د وانەگۆتنێ دا",
         reason_t_leave_early: "دەرکەفتنا زوو",
         reason_t_schedule_change: "گوهۆڕین د خشتەیێ وانەیان دا",
         reason_t_supplies: "کێماسی د پێداویستیان دا",
         reason_t_technology: "بکارئینانا ئامرازێن فێرکرنێ",
-        reason_t_cooperation: "هەڤکاری دگەل هەڤکاران",
-        reason_t_committee: "جڤینا کۆمیتەیێ",
+        reason_t_cooperation: "هەڤکاریکرن دگەل هەڤالان",
+        reason_t_committee: "کۆمبوونا کۆمیتەیێ",
         reason_t_celebration: "ئاهەنگا قوتابخانێ",
         reason_t_vacation_approval: "پەسەندکرنا دەستویریێ",
         reason_t_vacation_rejection: "رەتکرنا دەستویریێ",
@@ -217,9 +228,9 @@ const translations = {
         reason_t_emergency: "رەوشا ژنیشکێڤە",
 
         // --- Modals & Buttons ---
-        btn_manage_students: "رێڤەبرنا قوتابیان",
-        btn_bulk_select: "دیارکرنا کۆمەڵ",
-        modal_manage_title: "رێڤەبرنا قوتابیان",
+        btn_manage_students: "رێڤەبرنا قوتابییان",
+        btn_bulk_select: "دیارکرنا ب کۆمەل",
+        modal_manage_title: "رێڤەبرنا قوتابییان",
         tab_add_single: "زێدەکرنا ئێک قوتابی",
         tab_add_bulk: "زێدەکرنا ب کۆمەل (Excel)",
         tab_add_single_teacher: "زێدەکرنا ئێک مامۆستا",
@@ -227,7 +238,7 @@ const translations = {
         title_saved_teachers: "مامۆستایێن پاشەکەوتکری:",
         hint_excel_teacher: "پێزانینێن مامۆستایان ژ ئێکسلێ کۆپی بکە و ل ڤێرێ پەیست بکە. (ناڤ، ژمارە)",
         btn_save: "پاشەکەوتکرن",
-        hint_excel: "پێزانینێن قوتابیان ژ ئێکسلێ کۆپی بکە و ل ڤێرێ پەیست بکە. (ناڤ، پۆل، هۆبە، ژمارە)",
+        hint_excel: "پێزانینێن قوتابییان ژ ئێکسلێ کۆپی بکە و ل ڤێرێ پەیست بکە. (ناڤ، پۆل، هۆبە، ژمارە)",
         btn_save_bulk: "پاشەکەوتکرنا کۆمەڵێ",
         title_saved_students: "قوتابیێن پاشەکەوتکری:",
         th_name: "ناڤ",
@@ -235,22 +246,22 @@ const translations = {
         th_section: "هۆبە",
         th_number: "ژمارە",
         th_action: "کردار",
-        modal_bulk_title: "دیارکرنا کۆمەلا قوتابیان",
+        modal_bulk_title: "دیارکرنا کۆمەلا قوتابییان",
         modal_reason_title: "ئەگەرێ ئاگەهداریێ هەلبژێرە",
         ph_search: "ل قوتابی بگەڕە...",
         btn_confirm: "پەسەندکرن",
         modal_queue_title: "فرێکرنا ب کۆمەل",
         btn_delete_all: "سڕینا هەمیان",
         btn_delete_selected: "سڕینا یێن دیارکری",
-        msg_confirm_delete_all: "ئەرێ تۆ یێ پشتڕاستی کو دڤێت هەمی قوتابیان بسڕی؟",
-        msg_confirm_delete_selected: "ئەرێ تۆ یێ پشتڕاستی کو دڤێت ڤان {count} قوتابیان بسڕی؟",
-        msg_confirm_delete_single: "ئەرێ تۆ یێ پشتڕاستی کو دڤێت ڤی قوتابی بسڕی؟",
+        msg_confirm_delete_all: "ئەرێ تۆ یێ پشتڕاستی کو دڤێت هەمی قوتابییان ژێ ببەی؟",
+        msg_confirm_delete_selected: "ئەرێ تۆ یێ پشتڕاستی کو دڤێت ڤان {count} قوتابییان ژێ ببەی؟",
+        msg_confirm_delete_single: "ئەرێ تۆ یێ پشتڕاستی کو دڤێت ڤی قوتابیی ژێ ببەی؟",
 
-        preview_title: "<i class='fa-regular fa-eye'></i> دیتنا نامەیێ",
+        preview_title: "<i class='fa-regular fa-eye'></i> پێشخاندنا نامەیێ",
         wa_name: "سمیانێ قوتابی",
         wa_teacher_name: "مامۆستا",
         wa_status: "ئۆنلاینە",
-        preview_placeholder: "هیڤییە پێزانینێن قوتابی بنڤیسە دا نامەیێ ل ڤێرێ ببینی...",
+        preview_placeholder: "هیڤیدارین پێزانینێن قوتابیی بنڤیسە دا کو نامەیێ ل ڤێرێ ببینی...",
         btn_send: "<i class='fa-brands fa-whatsapp'></i> فرێکرن ب واتسئاپێ"
     },
     en: {
@@ -395,115 +406,115 @@ const getLocalizedMessageTemplate = (lang, reason, studentName, studentClass, st
         let msg = "";
         
         if (isKu) {
-            msg = `سلاڤ،\nکارگێڕیا قوتابخانێ حەز دکەت ب رێیا ڤێ نامەیێ پەیوەندیێ ب هەوە بکەت.\n`;
-            msg += `ئەم حەز دکەین ڤی بابەتی دگەل مامۆستا: ${tName} گەنگەشە بکەین.\n`;
+            msg = `سلاڤ،\nکارگێڕیا قوتابخانێ دڤێت ب رێیا ڤێ نامەیێ پەیوەندیێ ب هەوە بکەت.\n`;
+            msg += `ئەم حەز دکەین ڤی بابەتی دگەل مامۆستا: ${tName} بەحس بکەین.\n`;
             msg += `بابەتێ وانەیێ: ${tSubject}\n\n`;
             
             switch (reason) {
-                case 't_absence': msg += `📌 *بابەت: ئاگەهداریا نەهاتنێ*\nمە تێبینی کریە کو هوین نەهاتینە سەر کاری. هیڤیدارین ئەگەرێ نەهاتنێ دیار بکەن و پەیوەندیێ ب کارگێڕیێ بکەن.`; break;
+                case 't_absence': msg += `📌 *بابەت: ئاگەهدارییا نەهاتنێ*\nمە تێبینی کرییە کو هوین نەهاتینە سەر کاری. هیڤیدارین ئەگەرێ نەهاتنێ دیار بکەن و پەیوەندیێ ب کارگێڕیێ بکەن.`; break;
                 case 't_late': msg += `📌 *بابەت: درەنگ کەفتن*\nتێبینی هاتیە کرن کو هوین درەنگ هاتینە سەر کاری. پابەندبوون ب دەمی گەلەک گرنگە، هیڤیدارین سەرەدانا کارگێڕیێ بکەن.`; break;
-                case 't_meeting': msg += `🤝 *بابەت: بانگهێشتنا جڤینێ*\nکارگێڕیا قوتابخانێ هەوە بانگهێشت دکەت بۆ جڤینەکا کارگێڕی ل رێکەفتی ${tFormattedDate} دەمژمێر ${tFormattedTime}. ئامادەبوونا هەوە پێدڤیە.`; break;
-                case 't_duty': msg += `📋 *بابەت: ئەرکێ چاڤدێریێ*\nئەم دڤێت هەوە بیربینین ب ئەرکێ هەوە یێ چاڤدێریێ. هیڤیدارین ب باشترین شێوە کارێ خۆ ئەنجام بدەن.`; break;
-                case 't_thanks': msg += `🌟 *بابەت: سوپاس و پێزانین*\nکارگێڕیا قوتابخانێ سوپاسیا هەوە دکەت بۆ بزاڤ و ماندووبوونا هەوە دگەل قوتابیان دا. ئەم شانازیێ ب هەوە دکەین.`; break;
+                case 't_meeting': msg += `🤝 *بابەت: بانگهێشتکرن بۆ کۆمبوونێ*\nکارگێڕیا قوتابخانێ هەوە داوەت دکەت بۆ کۆمبوونەکا کارگێڕی ل رێکەفتی ${tFormattedDate} دەمژمێر ${tFormattedTime}. ئامادەبوونا هەوە پێدڤیە.`; break;
+                case 't_duty': msg += `📋 *بابەت: ئەرکێ چاڤدێریێ*\nمە دڤێت هەوە بیربینین ب ئەرکێ هەوە یێ چاڤدێریێ. هیڤیدارین ب باشترین شێوە کارێ خۆ ئەنجام بدەن.`; break;
+                case 't_thanks': msg += `🌟 *بابەت: سوپاس و پێزانین*\nکارگێڕیا قوتابخانێ سوپاسییا هەوە دکەت بۆ بزاڤ و ماندووبوونا هەوە دگەل قوتابییان دا. ئەم شانازییێ ب هەوە دکەین.`; break;
                 case 't_violation': msg += `⚠️ *بابەت: پێشێلکرنا رێنمایان*\nتێبینی هاتیە کرن کو پێشێلکاریەک د رێنمایێن قوتابخانێ دا هاتیە کرن. هیڤیدارین سەرەدانا کارگێڕیێ بکەن ل رێکەفتی ${tFormattedDate} دەمژمێر ${tFormattedTime}.`; break;
-                case 't_grades': msg += `📝 *بابەت: رادەستکرنا نمرەیان*\nئەم داخوازێ ژ هەوە دکەین کو بلەز نمرەیێن قوتابیان رادەست بکەن، ژبەر کو دەمێ دیارکری خەریکە ب دوماهی دهێت.`; break;
+                case 't_grades': msg += `📝 *بابەت: رادەستکرنا نمرەیان*\nئەم داخوازێ ژ هەوە دکەین کو بلەز نمرەیێن قوتابییان رادەست بکەن، ژبەر کو دەمێ دیارکری خەریکە ب دوماهی دهێت.`; break;
                 case 't_notice': msg += `🔔 *بابەت: ئاگەهداریەکا گرنگ*\nهیڤیدارین پەیوەندیێ ب کارگێڕیێ بکەن ژبەر بابەتەکێ گرنگ یێ پەروەردەیی.`; break;
                 case 't_exam_questions': msg += `📝 *بابەت: رادەستکرنا پرسیارێن ئەزموونان*\nهیڤیدارین بلەز پرسیارێن ئەزموونان رادەست بکەن بەریا دەمێ دیارکری ب دوماهی بهێت.`; break;
                 case 't_lesson_plan': msg += `📖 *بابەت: پلانا وانەیێ*\nهیڤیدارین پلانا وانەیێ (رۆژانە/سالانە) بۆ رێڤەبەریێ بهێتە رادەستکرن.`; break;
                 case 't_class_management': msg += `🗣️ *بابەت: رێڤەبرنا پۆلێ*\nتێبینی لسەر کۆنترۆلکرنا پۆلێ هەنە. هیڤیدارین رێکارێن پێدڤی بگرنە بەر بۆ رێڤەبرنەکا باشتر.`; break;
                 case 't_parent_meeting': msg += `🤝 *بابەت: دیدار دگەل سمیانان*\nهیڤیدارین ل رێکەفتی ${tFormattedDate} دەمژمێر ${tFormattedTime} ئامادەبن بۆ دیدارەکێ دگەل سمیانێ قوتابی.`; break;
-                case 't_training': msg += `🎓 *بابەت: خولا راهێنانێ*\nهوین یێن هاتینە دەستنیشانکرن بۆ پشکداریکرن د خولەکا راهێنانێ دا. هیڤیدارین ئامادەبوونا هەوە ل جهـ و دەمێ دیارکری بیت.`; break;
+                case 't_training': msg += `🎓 *بابەت: خولا راهێنانێ*\nهوین هاتینە دەستنیشانکرن بۆ پشکداریکرن د خولەکا راهێنانێ دا. هیڤیدارین ئامادەبوونا هەوە ل جهـ و دەمێ دیارکری بیت.`; break;
                 case 't_activity_supervision': msg += `🎭 *بابەت: سەرپەرشتیا چالاکیەکێ*\nکارگێڕیا قوتابخانێ ئەڤ چالاکیە ب هەوە سپارتیە. هیڤیدارین ب باشترین شێوە سەرپەرشتیا وێ بکەن.`; break;
-                case 't_student_issue': msg += `⚠️ *بابەت: کێشەیا قوتابیەکێ*\nهیڤیدارین سەرەدانا کارگێڕیێ بکەن بۆ گەنگەشەکرنا کێشەیەکا تایبەت ب قوتابیەکێ هەوە ڤە.`; break;
-                case 't_excellent_performance': msg += `🌟 *بابەت: ئاستێ نایاب د وانەگوتنێ دا*\nسوپاس بۆ خەمخۆری و ئاستێ هەوە یێ نایاب د گۆتنا وانەیان دا. ماندووبوونا هەوە جهێ رێزێیە.`; break;
+                case 't_student_issue': msg += `⚠️ *بابەت: کێشەیا قوتابییەکێ*\nهیڤیدارین سەرەدانا کارگێڕیێ بکەن بۆ بەحسکرنا کێشەیەکا تایبەت ب قوتابیەکێ هەوە ڤە.`; break;
+                case 't_excellent_performance': msg += `🌟 *بابەت: ئاستێ نایاب د وانەگۆتنێ دا*\nسوپاس بۆ خەمخۆری و ئاستێ هەوە یێ نایاب د گۆتنا وانەیان دا. ماندووبوونا هەوە جهێ رێزێ یە.`; break;
                 case 't_leave_early': msg += `🚪 *بابەت: دەرکەفتنا زوو*\nتێبینی هاتیە کرن کو هوین بەری دەمێ دیارکری دەرکەفتینە. پابەندبوون ب دەمی گەلەک گرنگە.`; break;
-                case 't_schedule_change': msg += `📅 *بابەت: گوهۆڕین د خشتەیێ وانەیان دا*\nئەم دڤێت هەوە ئاگەهدار بکەین کو گوهۆڕینەک د خشتەیێ وانەیێن هەوە دا هاتیە کرن. هیڤیدارین خشتەیێ نوی وەرگرن.`; break;
+                case 't_schedule_change': msg += `📅 *بابەت: گوهۆڕین د خشتەیێ وانەیان دا*\nمە دڤێت هەوە ئاگەهدار بکەین کو گوهۆڕینەک د خشتەیێ وانەیێن هەوە دا هاتیە کرن. هیڤیدارین خشتەیێ نوی وەرگرن.`; break;
                 case 't_supplies': msg += `📦 *بابەت: کێماسی د پێداویستیان دا*\nداخوازیا هەوە بۆ پێداویستیان گەهشتیە مە و ئەم دێ ب زووترین دەم چارەسەر کەین.`; break;
                 case 't_technology': msg += `💻 *بابەت: بکارئینانا ئامرازێن فێرکرنێ*\nهیڤیدارین پتر مفا ژ ئامرازێن فێرکرنێ (وەک تاقیگەهـ یان شاشە) بهێتە وەرگرتن بۆ باشترکرنا پرۆسێسا فێربوونێ.`; break;
-                case 't_cooperation': msg += `🤝 *بابەت: هەڤکاری دگەل هەڤکاران*\nرێڤەبەری سوپاسیا گیانێ هەڤکاریێ یێ هەوە دگەل مامۆستایێن دی دکەت. ئەڤە دبيتە ئەگەرێ سەرکەفتنا کارێ مە هەمییان.`; break;
-                case 't_committee': msg += `👥 *بابەت: جڤینا کۆمیتەیێ*\nهوین وەک ئەندامێ کۆمیتەیێ دهێنە بانگهێشتکرن بۆ جڤینەکێ ل رێکەفتی ${tFormattedDate} دەمژمێر ${tFormattedTime}.`; break;
+                case 't_cooperation': msg += `🤝 *بابەت: هەڤکاریکرن دگەل هەڤالان*\nرێڤەبەری سوپاسیا گیانێ هەڤکاریێ یێ هەوە دگەل مامۆستایێن دی دکەت. ئەڤە دبيتە ئەگەرێ سەرکەفتنا کارێ مە هەمییان.`; break;
+                case 't_committee': msg += `👥 *بابەت: کۆمبوونا کۆمیتەیێ*\nهوین وەک ئەندامێ کۆمیتەیێ دهێنە بانگهێشتکرن بۆ کۆمبوونەکێ ل رێکەفتی ${tFormattedDate} دەمژمێر ${tFormattedTime}.`; break;
                 case 't_celebration': msg += `🎉 *بابەت: ئاهەنگا قوتابخانێ*\nئەم داخوازێ ژ هەوە دکەین کو پشکداریێ د ئامادەکاریێن ئاهەنگا قوتابخانێ دا بکەن.`; break;
-                case 't_vacation_approval': msg += `✅ *بابەت: پەسەندکرنا دەستویریێ*\nئەم دڤێت هەوە ئاگەهدار بکەین کو داخوازیا هەوە بۆ دەستویریێ هاتیە پەسەندکرن.`; break;
-                case 't_vacation_rejection': msg += `❌ *بابەت: رەتکرنا دەستویریێ*\nب مخابنیڤە، ژبەر پێدڤیا کاری ل ڤی دەمی، داخوازیا هەوە بۆ مۆلەتێ نەهاتیە پەسەندکرن.`; break;
-                case 't_evaluation': msg += `📊 *بابەت: هەلسەنگاندنا ئاستی*\nهیڤیدارین سەرەدانا کارگێڕیێ بکەن بۆ دیتن و گەنگەشەکرنا ئەنجامێن هەلسەنگاندنا ئاستێ هەوە یێ سالانە.`; break;
+                case 't_vacation_approval': msg += `✅ *بابەت: پەسەندکرنا دەستویریێ*\nمە دڤێت هەوە ئاگەهدار بکەین کو داخوازیا هەوە بۆ دەستویریێ هاتیە پەسەندکرن.`; break;
+                case 't_vacation_rejection': msg += `❌ *بابەت: رەتکرنا دەستویریێ*\nب مخابنی ڤە، ژبەر پێدڤیا کاری ل ڤی دەمی، داخوازیا هەوە بۆ مۆلەتێ نەهاتیە پەسەندکرن.`; break;
+                case 't_evaluation': msg += `📊 *بابەت: هەلسەنگاندنا ئاستی*\nهیڤیدارین سەرەدانا کارگێڕیێ بکەن بۆ دیتن و بەحسکرنا ئەنجامێن هەلسەنگاندنا ئاستێ هەوە یێ سالانە.`; break;
                 case 't_warning': msg += `⚠️ *بابەت: تێبینی و هۆشداری*\nئەڤە وەک تێبینیەکا کارگێڕیێ یە لسەر بابەتەکێ تایبەت ب کاری ڤە. هیڤیدارین دووبارە نەبیت.`; break;
                 case 't_emergency': msg += `🚨 *بابەت: رەوشا ژنیشکێڤە*\nهیڤیدارین ب زووترین دەم پەیوەندیێ ب کارگێڕیێ بکەن ژبەر رەوشەکا ژنیشکێڤە و گرنگ.`; break;
             }
         } else if (isEn) {
-            msg = `Greetings,\nThe school administration would like to communicate with you.\n`;
-            msg += `This message is regarding Teacher: ${tName}\n`;
+            msg = `Greetings,\nThe school administration would like to communicate with you through this message.\n`;
+            msg += `We would like to discuss this matter with Teacher: ${tName}.\n`;
             msg += `Subject: ${tSubject}\n\n`;
             switch (reason) {
-                case 't_absence': msg += `📌 *Subject: Absence Notice*\nWe noticed your absence. Please provide the reason and contact the administration.`; break;
-                case 't_late': msg += `📌 *Subject: Late Arrival*\nWe noticed a late arrival. Punctuality is important, please visit the administration.`; break;
-                case 't_meeting': msg += `🤝 *Subject: Meeting Invitation*\nYou are invited to a management meeting on ${tFormattedDate} at ${tFormattedTime}. Your attendance is required.`; break;
-                case 't_duty': msg += `📋 *Subject: Duty Reminder*\nThis is a reminder regarding your supervision duty.`; break;
-                case 't_thanks': msg += `🌟 *Subject: Thanks & Appreciation*\nThe administration appreciates your efforts and hard work.`; break;
-                case 't_violation': msg += `⚠️ *Subject: Instruction Violation*\nA violation of school instructions has been recorded. Please visit the administration on ${tFormattedDate} at ${tFormattedTime}.`; break;
-                case 't_grades': msg += `📝 *Subject: Grades Submission*\nPlease submit the students' grades as the deadline is approaching.`; break;
+                case 't_absence': msg += `📌 *Subject: Notice of Absence*\nWe have noticed your absence from work. Please clarify the reason for your absence and contact the administration.`; break;
+                case 't_late': msg += `📌 *Subject: Late Arrival*\nIt has been noted that you arrived late to work. Punctuality is very important, we hope you visit the administration.`; break;
+                case 't_meeting': msg += `🤝 *Subject: Meeting Invitation*\nThe school administration invites you to an administrative meeting on ${tFormattedDate} at ${tFormattedTime}. Your attendance is required.`; break;
+                case 't_duty': msg += `📋 *Subject: Supervision Duty*\nWe would like to remind you of your supervision duty. We hope you perform your work in the best manner.`; break;
+                case 't_thanks': msg += `🌟 *Subject: Thanks and Appreciation*\nThe school administration thanks you for your efforts and hard work with the students. We are proud of you.`; break;
+                case 't_violation': msg += `⚠️ *Subject: Violation of Guidelines*\nIt has been noted that a violation of school guidelines has occurred. We hope you visit the administration on ${tFormattedDate} at ${tFormattedTime}.`; break;
+                case 't_grades': msg += `📝 *Subject: Submission of Grades*\nWe request you to promptly submit the students' grades, as the specified deadline is about to end.`; break;
                 case 't_notice': msg += `🔔 *Subject: Important Notice*\nPlease contact the administration regarding an important educational matter.`; break;
-                case 't_exam_questions': msg += `📝 *Subject: Exam Questions*\nPlease submit the exam questions before the deadline.`; break;
-                case 't_lesson_plan': msg += `📖 *Subject: Lesson Plan*\nPlease submit your lesson plan to the administration.`; break;
-                case 't_class_management': msg += `🗣️ *Subject: Class Management*\nWe have some notes regarding class management. Please review the required procedures.`; break;
-                case 't_parent_meeting': msg += `🤝 *Subject: Parent Meeting*\nPlease attend a meeting with a parent on ${tFormattedDate} at ${tFormattedTime}.`; break;
-                case 't_training': msg += `🎓 *Subject: Training Course*\nYou have been nominated for a training course. Please attend at the specified time and place.`; break;
-                case 't_activity_supervision': msg += `🎭 *Subject: Activity Supervision*\nThe administration has assigned you to supervise a school activity.`; break;
-                case 't_student_issue': msg += `⚠️ *Subject: Student Issue*\nPlease visit the administration to discuss an issue related to one of your students.`; break;
-                case 't_excellent_performance': msg += `🌟 *Subject: Excellent Performance*\nThank you for your excellent performance and dedication to teaching.`; break;
-                case 't_leave_early': msg += `🚪 *Subject: Early Leave*\nWe noticed you left before the official working hours ended.`; break;
-                case 't_schedule_change': msg += `📅 *Subject: Schedule Change*\nPlease be informed that there is a change in your lesson schedule.`; break;
-                case 't_supplies': msg += `📦 *Subject: Supplies Shortage*\nWe received your request for supplies and will address it soon.`; break;
-                case 't_technology': msg += `💻 *Subject: Use of Technology*\nPlease make better use of educational tools (like labs or smart screens) to improve the learning process.`; break;
-                case 't_cooperation': msg += `🤝 *Subject: Peer Cooperation*\nThe administration appreciates your cooperative spirit with other teachers.`; break;
-                case 't_committee': msg += `👥 *Subject: Committee Meeting*\nYou are invited to a committee meeting on ${tFormattedDate} at ${tFormattedTime}.`; break;
-                case 't_celebration': msg += `🎉 *Subject: School Celebration*\nWe request your participation in the preparations for the school celebration.`; break;
+                case 't_exam_questions': msg += `📝 *Subject: Submission of Exam Questions*\nWe request you to promptly submit the exam questions before the specified deadline ends.`; break;
+                case 't_lesson_plan': msg += `📖 *Subject: Lesson Plan*\nPlease submit the lesson plan (daily/annual) to the administration.`; break;
+                case 't_class_management': msg += `🗣️ *Subject: Classroom Management*\nThere are observations regarding classroom control. Please take the necessary measures for better management.`; break;
+                case 't_parent_meeting': msg += `🤝 *Subject: Meeting with Parents*\nPlease be present on ${tFormattedDate} at ${tFormattedTime} for a meeting with the student's parent.`; break;
+                case 't_training': msg += `🎓 *Subject: Training Course*\nYou have been selected to participate in a training course. We hope you will be present at the specified place and time.`; break;
+                case 't_activity_supervision': msg += `🎭 *Subject: Activity Supervision*\nThe school administration has assigned this activity to you. We hope you supervise it in the best manner.`; break;
+                case 't_student_issue': msg += `⚠️ *Subject: Student Issue*\nPlease visit the administration to discuss an issue specific to one of your students.`; break;
+                case 't_excellent_performance': msg += `🌟 *Subject: Excellent Teaching Performance*\nThank you for your care and excellent performance in teaching classes. Your hard work is highly appreciated.`; break;
+                case 't_leave_early': msg += `🚪 *Subject: Early Departure*\nIt has been noted that you left before the specified time. Punctuality is very important.`; break;
+                case 't_schedule_change': msg += `📅 *Subject: Change in Class Schedule*\nWe would like to inform you that a change has been made to your class schedule. Please receive the new schedule.`; break;
+                case 't_supplies': msg += `📦 *Subject: Shortage of Supplies*\nYour request for supplies has reached us and we will resolve it as soon as possible.`; break;
+                case 't_technology': msg += `💻 *Subject: Use of Educational Tools*\nWe hope you make more use of educational tools (such as laboratories or screens) to improve the learning process.`; break;
+                case 't_cooperation': msg += `🤝 *Subject: Cooperation with Colleagues*\nThe administration thanks you for your spirit of cooperation with other teachers. This contributes to the success of all our work.`; break;
+                case 't_committee': msg += `👥 *Subject: Committee Meeting*\nYou are invited as a committee member to a meeting on ${tFormattedDate} at ${tFormattedTime}.`; break;
+                case 't_celebration': msg += `🎉 *Subject: School Celebration*\nWe ask you to participate in the preparations for the school celebration.`; break;
                 case 't_vacation_approval': msg += `✅ *Subject: Vacation Approval*\nWe would like to inform you that your vacation request has been approved.`; break;
-                case 't_vacation_rejection': msg += `❌ *Subject: Vacation Rejection*\nUnfortunately, due to work requirements, your vacation request has not been approved.`; break;
-                case 't_evaluation': msg += `📊 *Subject: Performance Evaluation*\nPlease visit the administration to discuss your annual performance evaluation.`; break;
-                case 't_warning': msg += `⚠️ *Subject: Warning*\nThis is an administrative warning regarding a specific matter. Please ensure it does not happen again.`; break;
-                case 't_emergency': msg += `🚨 *Subject: Emergency*\nPlease contact the administration immediately regarding an urgent matter.`; break;
+                case 't_vacation_rejection': msg += `❌ *Subject: Vacation Rejection*\nUnfortunately, due to work requirements at this time, your vacation request has not been approved.`; break;
+                case 't_evaluation': msg += `📊 *Subject: Performance Evaluation*\nPlease visit the administration to see and discuss the results of your annual performance evaluation.`; break;
+                case 't_warning': msg += `⚠️ *Subject: Notice and Warning*\nThis is an administrative notice regarding a specific work-related matter. We hope it will not be repeated.`; break;
+                case 't_emergency': msg += `🚨 *Subject: Emergency Situation*\nPlease contact the administration as soon as possible due to an urgent and important situation.`; break;
             }
         } else {
-            msg = `تحية طيبة،\nتود إدارة المدرسة التواصل معكم من خلال هذه الرسالة.\n`;
-            msg += `نود إعلامكم بخصوص الأستاذ/ة: ${tName}\n`;
-            msg += `المادة الدراسية: ${tSubject}\n\n`;
+            msg = `تحية طيبة،\nترغب إدارة المدرسة بالتواصل معكم من خلال هذه الرسالة.\n`;
+            msg += `نود مناقشة هذا الموضوع مع المعلم/ة: ${tName}.\n`;
+            msg += `المادة: ${tSubject}\n\n`;
             switch (reason) {
-                case 't_absence': msg += `📌 *الموضوع: غياب عن الدوام*\nلقد تم تسجيل غيابكم عن الدوام. نرجو توضيح سبب الغياب ومراجعة الإدارة.`; break;
-                case 't_late': msg += `📌 *الموضوع: تأخر عن الدوام*\nلوحظ تأخركم عن الحضور في الوقت المحدد. الالتزام بالوقت مهم جداً، نرجو مراجعة الإدارة.`; break;
-                case 't_meeting': msg += `🤝 *الموضوع: دعوة لاجتماع إدارة*\nتدعوكم إدارة المدرسة لحضور اجتماع إداري بتاريخ ${tFormattedDate} الساعة ${tFormattedTime}. حضوركم ضروري.`; break;
-                case 't_duty': msg += `📋 *الموضوع: تذكير بالمناوبة*\nنود تذكيركم بموعد مناوبتكم. نرجو الالتزام والقيام بالمهام الموكلة إليكم.`; break;
-                case 't_thanks': msg += `🌟 *الموضوع: شكر وتقدير*\nتتقدم إدارة المدرسة بخالص الشكر والتقدير لجهودكم المبذولة وتفانيكم في العمل.`; break;
-                case 't_violation': msg += `⚠️ *الموضوع: مخالفة تعليمات*\nتم رصد مخالفة للتعليمات المدرسية. نرجو مراجعة الإدارة بتاريخ ${tFormattedDate} الساعة ${tFormattedTime}.`; break;
-                case 't_grades': msg += `📝 *الموضوع: تسليم الدرجات*\nنرجو منكم الإسراع في تسليم درجات الطلاب حيث اقترب الموعد النهائي المحدد لتسليمها.`; break;
-                case 't_notice': msg += `🔔 *الموضوع: تبليغ هام*\nيرجى مراجعة الإدارة أو التواصل معنا بخصوص أمر هام وعاجل.`; break;
-                case 't_exam_questions': msg += `📝 *الموضوع: تسليم أسئلة الامتحانات*\nنرجو الإسراع في تسليم أسئلة الامتحانات قبل الموعد النهائي.`; break;
-                case 't_lesson_plan': msg += `📖 *الموضوع: الخطة اليومية/السنوية*\nيرجى تسليم الخطة الدراسية إلى الإدارة لغرض المتابعة.`; break;
-                case 't_class_management': msg += `🗣️ *الموضوع: إدارة الصف*\nلدينا بعض الملاحظات حول السيطرة على الطلاب وإدارة الصف. نرجو اتخاذ الإجراءات اللازمة.`; break;
-                case 't_parent_meeting': msg += `🤝 *الموضوع: لقاء مع أولياء الأمور*\nنرجو حضوركم بتاريخ ${tFormattedDate} الساعة ${tFormattedTime} للقاء مع ولي أمر أحد الطلاب.`; break;
-                case 't_training': msg += `🎓 *الموضوع: دورة تدريبية/تطويرية*\nلقد تم ترشيحكم لحضور دورة تطويرية. نرجو الالتزام بالحضور في الزمان والمكان المحددين.`; break;
-                case 't_activity_supervision': msg += `🎭 *الموضوع: الإشراف على نشاط*\nتم تكليفكم بالإشراف على نشاط مدرسي. نأمل منكم المتابعة بأفضل صورة.`; break;
-                case 't_student_issue': msg += `⚠️ *الموضوع: مشكلة تخص طالب*\nيرجى مراجعة الإدارة لمناقشة أمر يخص أحد طلابكم.`; break;
-                case 't_excellent_performance': msg += `🌟 *الموضوع: أداء متميز في التدريس*\nتتقدم الإدارة بالشكر الجزيل لأدائكم المتميز وحرصكم العالي في إيصال المادة العلمية.`; break;
-                case 't_leave_early': msg += `🚪 *الموضوع: مغادرة مبكرة*\nلوحظ خروجكم من المدرسة قبل انتهاء وقت الدوام الرسمي. الالتزام بالوقت ضروري جداً.`; break;
-                case 't_schedule_change': msg += `📅 *الموضوع: تغيير في جدول الدروس*\nنود إعلامكم بوجود تعديل على جدول حصصكم. يرجى استلام النسخة الجديدة.`; break;
-                case 't_supplies': msg += `📦 *الموضوع: نقص في المستلزمات*\nلقد استلمنا طلبكم بخصوص النواقص وسنقوم بتوفيرها في أقرب وقت ممكن.`; break;
-                case 't_technology': msg += `💻 *الموضوع: استخدام الوسائل التعليمية*\nنؤكد على ضرورة استخدام الوسائل التعليمية (كالمختبر والشاشة الذكية) لتعزيز فهم الطلاب.`; break;
-                case 't_cooperation': msg += `🤝 *الموضوع: تعاون مع الزملاء*\nتثمن الإدارة عالياً روح التعاون التي تبدونها مع زملائكم المعلمين مما ينعكس إيجاباً على بيئة العمل.`; break;
-                case 't_committee': msg += `👥 *الموضوع: اجتماع لجنة*\nبصفتكم عضواً في اللجنة، ندعوكم لحضور الاجتماع المقرر بتاريخ ${tFormattedDate} الساعة ${tFormattedTime}.`; break;
-                case 't_celebration': msg += `🎉 *الموضوع: احتفالية مدرسية*\nنرجو منكم المشاركة والمساهمة في التحضيرات الخاصة بالاحتفالية المدرسية القادمة.`; break;
-                case 't_vacation_approval': msg += `✅ *الموضوع: الموافقة على الإجازة*\nنود إعلامكم بأنه تمت الموافقة على طلب الإجازة المقدم من قبلكم.`; break;
-                case 't_vacation_rejection': msg += `❌ *الموضوع: رفض طلب الإجازة*\nنعتذر لعدم تمكننا من الموافقة على طلب الإجازة في الوقت الحالي نظراً لحاجة العمل.`; break;
-                case 't_evaluation': msg += `📊 *الموضوع: تقييم الأداء*\nيرجى مراجعة الإدارة للاطلاع على نتائج التقييم السنوي لأدائكم ومناقشتها.`; break;
-                case 't_warning': msg += `⚠️ *الموضوع: توجيه لفت نظر*\nهذا تنبيه إداري بخصوص ملاحظة معينة تخص عملكم. نأمل ألا يتكرر ذلك مستقبلاً.`; break;
-                case 't_emergency': msg += `🚨 *الموضوع: حالة طارئة*\nيرجى مراجعة الإدارة فوراً لأمر عاجل وطارئ.`; break;
+                case 't_absence': msg += `📌 *الموضوع: إشعار غياب*\nلقد لاحظنا غيابكم عن العمل. نرجو توضيح سبب الغياب والتواصل مع الإدارة.`; break;
+                case 't_late': msg += `📌 *الموضوع: تأخر عن الدوام*\nلوحظ تأخركم عن الدوام. الالتزام بالوقت مهم جداً، نرجو مراجعة الإدارة.`; break;
+                case 't_meeting': msg += `🤝 *الموضوع: دعوة لاجتماع*\nتدعوكم إدارة المدرسة لاجتماع إداري بتاريخ ${tFormattedDate} الساعة ${tFormattedTime}. حضوركم ضروري.`; break;
+                case 't_duty': msg += `📋 *الموضوع: مهمة الإشراف*\nنود تذكيركم بمهمة الإشراف الخاصة بكم. نأمل أن تؤدوا عملكم بأفضل صورة.`; break;
+                case 't_thanks': msg += `🌟 *الموضوع: شكر وتقدير*\nتشكركم إدارة المدرسة على جهودكم وتعبكم مع الطلاب. نحن فخورون بكم.`; break;
+                case 't_violation': msg += `⚠️ *الموضوع: مخالفة التعليمات*\nلوحظ حدوث مخالفة لتعليمات المدرسة. نرجو مراجعة الإدارة بتاريخ ${tFormattedDate} الساعة ${tFormattedTime}.`; break;
+                case 't_grades': msg += `📝 *الموضوع: تسليم الدرجات*\nنطلب منكم الإسراع في تسليم درجات الطلاب، حيث أن الموعد المحدد يوشك على الانتهاء.`; break;
+                case 't_notice': msg += `🔔 *الموضوع: إشعار هام*\nنرجو التواصل مع الإدارة بخصوص موضوع تربوي هام.`; break;
+                case 't_exam_questions': msg += `📝 *الموضوع: تسليم أسئلة الامتحانات*\nنرجو الإسراع في تسليم أسئلة الامتحانات قبل انتهاء الموعد المحدد.`; break;
+                case 't_lesson_plan': msg += `📖 *الموضوع: خطة الدرس*\nنرجو تسليم خطة الدرس (اليومية/السنوية) للإدارة.`; break;
+                case 't_class_management': msg += `🗣️ *الموضوع: إدارة الفصل*\nهناك ملاحظات حول السيطرة على الفصل. نرجو اتخاذ الإجراءات اللازمة لإدارة أفضل.`; break;
+                case 't_parent_meeting': msg += `🤝 *الموضوع: لقاء مع أولياء الأمور*\nنرجو التواجد بتاريخ ${tFormattedDate} الساعة ${tFormattedTime} للقاء ولي أمر الطالب.`; break;
+                case 't_training': msg += `🎓 *الموضوع: دورة تدريبية*\nلقد تم ترشيحكم للمشاركة في دورة تدريبية. نأمل حضوركم في المكان والزمان المحددين.`; break;
+                case 't_activity_supervision': msg += `🎭 *الموضوع: الإشراف على نشاط*\nلقد أوكلت إليكم إدارة المدرسة هذا النشاط. نأمل أن تشرفوا عليه بأفضل شكل ممكن.`; break;
+                case 't_student_issue': msg += `⚠️ *الموضوع: مشكلة طالب*\nنرجو مراجعة الإدارة لمناقشة مشكلة خاصة بأحد طلابكم.`; break;
+                case 't_excellent_performance': msg += `🌟 *الموضوع: أداء ممتاز في التدريس*\nشكراً لاهتمامكم وأدائكم الممتاز في إعطاء الدروس. تعبكم وجهدكم محل تقدير.`; break;
+                case 't_leave_early': msg += `🚪 *الموضوع: مغادرة مبكرة*\nلوحظ خروجكم قبل الوقت المحدد. الالتزام بالوقت مهم جداً.`; break;
+                case 't_schedule_change': msg += `📅 *الموضوع: تغيير في جدول الدروس*\nنود إعلامكم بوجود تغيير في جدول دروسكم. نرجو استلام الجدول الجديد.`; break;
+                case 't_supplies': msg += `📦 *الموضوع: نقص في المستلزمات*\nلقد وصلنا طلبكم بخصوص المستلزمات وسنقوم بتوفيرها في أقرب وقت.`; break;
+                case 't_technology': msg += `💻 *الموضوع: استخدام وسائل التعليم*\nنأمل الاستفادة بشكل أكبر من وسائل التعليم (كالمختبر أو الشاشة) لتحسين عملية التعلم.`; break;
+                case 't_cooperation': msg += `🤝 *الموضوع: التعاون مع الزملاء*\nتشكركم الإدارة على روح التعاون التي تبدونها مع بقية المعلمين. هذا يساهم في نجاح عملنا جميعاً.`; break;
+                case 't_committee': msg += `👥 *الموضوع: اجتماع اللجنة*\nأنتم مدعوون كعضو في اللجنة لحضور اجتماع بتاريخ ${tFormattedDate} الساعة ${tFormattedTime}.`; break;
+                case 't_celebration': msg += `🎉 *الموضوع: احتفال المدرسة*\nنطلب منكم المشاركة في التحضيرات الخاصة باحتفال المدرسة.`; break;
+                case 't_vacation_approval': msg += `✅ *الموضوع: الموافقة على الإجازة*\nنود إعلامكم بأنه تمت الموافقة على طلب إجازتكم.`; break;
+                case 't_vacation_rejection': msg += `❌ *الموضوع: رفض الإجازة*\nبكل أسف، وبسبب حاجة العمل في هذا الوقت، لم تتم الموافقة على طلب إجازتكم.`; break;
+                case 't_evaluation': msg += `📊 *الموضوع: تقييم الأداء*\nنرجو مراجعة الإدارة للاطلاع ومناقشة نتائج تقييم الأداء السنوي الخاص بكم.`; break;
+                case 't_warning': msg += `⚠️ *الموضوع: تنبيه وإنذار*\nهذا تنبيه إداري بخصوص موضوع معين يتعلق بالعمل. نأمل ألا يتكرر.`; break;
+                case 't_emergency': msg += `🚨 *الموضوع: حالة طارئة*\nنرجو التواصل مع الإدارة بأسرع وقت ممكن لوجود حالة طارئة وهامة.`; break;
             }
         }
         if (isKu) {
             msg += `\n\nدگەل رێز و سڵاڤان،\n*کارگێڕیا قوتابخانێ*`;
         } else if (isEn) {
-            msg += `\n\nWith our sincere regards and appreciation,\n*School Administration*`;
+            msg += `\n\nWith respect and regards,\n*School Administration*`;
         } else {
-            msg += `\n\nمع خالص تحياتنا،\n*إدارة المدرسة*`;
+            msg += `\n\nمع الاحترام والتقدير،\n*إدارة المدرسة*`;
         }
         return msg;
     }
@@ -537,345 +548,256 @@ const getLocalizedMessageTemplate = (lang, reason, studentName, studentClass, st
     let msg = "";
 
     if (isKu) {
-        msg = `سلاڤ و رێز،\nکارگێڕیا قوتابخانێ دڤێت پەیوەندیێ ب هەوە بکەت وەک هەڤپشکێن مە د رێکا پەروەردەیێ دا.\n`;
-        msg += `دڤیا ئەم هەوە ئاگەهدار بکەین ل دۆر قوتابی: ${name}\n`;
-        msg += `قۆناغا خواندنێ: پۆلا ${sClass} - هۆبا (${sSection})\n\n`;
+        msg = `سلاڤ و رێز،\nکارگێڕیا قوتابخانێ دڤێت پەیوەندیێ ب هەوە بکەت وەک هەڤپشکێن مە د رێکا پەروەردەیی دا.\n`;
+        msg += `مە دڤێت هەوە ئاگەهدار بکەین ل دۆر قوتابی: ${name}\n`;
+        msg += `قۆناغا خواندنێ: پۆلا ${sClass} - هۆبەیا (${sSection})\n\n`;
 
         switch (reason) {
             case 'absence':
-                msg += `📌 *بابەت: ئاگەهداریا نەهاتنێ*\nمە ژ تۆمارێن ئامادەبوونێ دیتیە کو قوتابیێ ناڤبری بێی ئەگەرەکێ باوەرپێکری یان نوژداری گەلەک نەهاتیە.\nژبەر گرنگیا پێگیریێ ب ئامادەبوونێ و کارتێکرنا وێ لسەر ئاستێ زانستی، هیڤیدارین هوین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ گەنگەشەکرنا بابەتی.`;
+                msg += `📌 *بابەت: ئاگەهدارییا نەهاتنێ*\nمە د تۆمارێن ئامادەبوونێ دا تێبینی کرییە کو قوتابیێ ناڤبری بێی ئەگەرەکێ پەسەندکری یان نوژداری گەلەک نەهاتییە دەوامێ.\nژبەر گرنگییا پێگیرییێ ب ئامادەبوونێ و کارتێکرنا وێ لسەر ئاستێ زانستی، هیڤیدارین هوین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ بەحسکرنا ڤی بابەتی.`;
                 break;
             case 'badBehavior':
-                msg += `📌 *بابەت: ئاگەهداریا رەفتارا خراب*\nرەفتارەکا نەگونجای ژ لایێ قوتابیێ ناڤبری ڤە هاتیە تۆمارکرن.\nئەم ل کارگێڕیا قوتابخانێ گرنگییەکا مەزن ددەینە سەر راستڤەکرنا رەفتارێن قوتابیان دگەل فێرکرنا وان.\nلەوما، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ گەنگەشەکرنا رێکارێن پەروەردەیی یێن پێدڤی.`;
+                msg += `📌 *بابەت: ئاگەهدارییا رەفتارا خراب*\nرەفتارەکا نەگونجای ژ لایێ قوتابیێ ناڤبری ڤە هاتییە تۆمارکرن.\nئەم ل کارگێڕیا قوتابخانێ گرنگییەکا مەزن ددەینە سەر راستڤەکرنا رەفتارێن قوتابییان دگەل فێرکرنا وان.\nلەوما، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ بەحسکرنا رێکارێن پەروەردەیی یێن پێدڤی.`;
                 break;
             case 'lowGrades':
-                msg += `📌 *بابەت: ئاگەهداریا نزمبوونا ئاستێ زانستی*\nب رێکا دووڤچوونا هەلسەنگاندنان، مە تێبینی کریە کو ئاستێ خواندنا قوتابی د ڤی دەمێ دووماهیێ دا داکەتیە.\nژبەر خەمخۆریا مە بۆ پاشەرۆژا قوتابی، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ گەنگەشەکرنێ ل دۆر باشترکرنا ئاستێ وی یێ زانستی.`;
+                msg += `📌 *بابەت: ئاگەهدارییا نزمبوونا ئاستێ زانستی*\nب رێکا دیڤچوونا هەلسەنگاندنان، مە تێبینی کرییە کو ئاستێ خواندنا قوتابی د ڤی دەمێ دووماهییێ دا داکەفتییە.\nژبەر خەمخۆرییا مە بۆ پاشەرۆژا قوتابی، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ بەحسکرنێ ل دۆر باشترکرنا ئاستێ وی یێ زانستی.`;
                 break;
             case 'goodBehavior':
-                msg += `🌟 *بابەت: دەستخۆشی ل سەر رەفتارا باش*\nگەلەک کەیفخۆشین ل کارگێڕیا قوتابخانێ کو شانازیێ ب قوتابیێ ناڤبری ببەین، ژبەر کو خودان رەفتارەکا باش و رەوشتەکێ بەرزە و پێگیرە ب رێسایێن قوتابخانێ.\nئەڤ پێگیرییە ب روونی پەروەردا هەوە یا باش ددەتە دیارکرن. سوپاس بۆ بزاڤێن هەوە و ئەم داخوازا سەرکەفتنێ بۆ قوتابی دکەین.`;
+                msg += `🌟 *بابەت: دەستخۆشی ل سەر رەفتارا باش*\nکارگێڕیا قوتابخانێ گەلەک یا کەیفخۆشە کو شانازییێ ب قوتابیێ ناڤبری دکەت، ژبەر کو خودان رەفتارەکا باش و رەوشتەکێ بەرزە و پێگیرە ب یاسایێن قوتابخانێ.\nئەڤ پێگیرییە ب روونی پەروەردا هەوە یا باش ددەتە دیارکرن. سوپاس بۆ بزاڤێن هەوە و ئەم هیڤییا سەرکەفتنێ بۆ قوتابیی دخوازین.`;
                 break;
             case 'highGrades':
-                msg += `🎓 *بابەت: پیرۆزباهی بۆ سەرکەفتنا زانستی*\nجوانترین پیرۆزباهیان ئاراستەی هەوە دکەین ب هەلکەفتا سەرکەفتنا زانستی و نمرەیێن بلند یێن کو قوتابیێ ناڤبری ب دەستڤە ئیناین.\nئەڤ پێشکەفتنە بەرهەمێ بزاڤ و شەونخوونیا وی یە، و بەرهەمێ پالپشتیا هەوە یە. کارگێڕیا قوتابخانێ گەلەک شانازیێ پێ دکەت و داخوازا سەرکەفتنێن پتر بۆ دکەین.`;
+                msg += `🎓 *بابەت: پیرۆزباهی بۆ سەرکەفتنا زانستی*\nجوانترین پیرۆزباهییان ئاراستەی هەوە دکەین ب هەلکەفتا سەرکەفتنا زانستی و نمرەیێن بلند یێن کو قوتابیێ ناڤبری ب دەستڤە ئیناین.\nئەڤ پێشکەفتنە بەرهەمێ بزاڤ و ماندیبوونا وی یا شەڤ و رۆژە، و بەرهەمێ پالپشتییا هەوە یە. کارگێڕیا قوتابخانێ گەلەک شانازییێ پێ دکەت و هیڤییا سەرکەفتنێن پتر بۆ دخوازین.`;
                 break;
             case 'fight':
-                msg += `⚠️ *بابەت: گازیکرن ب ئەگەرێ شەڕکرنێ*\nگەلەک ب مخابنی ڤە هەوە ئاگەهدار دکەین کو قوتابیێ ناڤبری تووشی شەڕی بوویە دگەل هەڤالێن خۆ ل ناڤ قوتابخانێ.\nل دویڤ رێنمایێن قوتابخانێ، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ زانینا ئەگەرێن ئاریشێ و گەنگەشەکرنا رێکارێن پێدڤی.`;
+                msg += `⚠️ *بابەت: گازیکرن ب ئەگەرێ شەڕکرنێ*\nگەلەک ب مخابنی ڤە هەوە ئاگەهدار دکەین کو قوتابیێ ناڤبری تووشی شەڕی بوویە دگەل هەڤالێن خۆ د ناڤ قوتابخانێ دا.\nل دویڤ رێنمایێن قوتابخانێ، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ زانینا ئەگەرێن ئاریشێ و بەحسکرنا رێکارێن پێدڤی.`;
                 break;
             case 'reward':
-                msg += `🏆 *بابەت: ئاگەهداریا خەلاتکرنێ*\nب شانازی ڤە، ئەم گەلەک کەیفخۆشین کو هەوە ئاگەهدار بکەین ب بڕیارا خەلاتکرنا قوتابیێ ناڤبری وەک رێزگرتن ل بزاڤ، پێشکەفتن، و پشکداریا وی یا چالاک.\nئەم شانازیێ ب هەبوونا قوتابیێن ڤی ئاستی د قوتابخانا خۆ دا دکەین، و ئەم هیڤیدارین ئەڤ خەلاتە ببیتە هاندەرەک بۆ پێشکەفتنێن پتر.`;
+                msg += `🏆 *بابەت: ئاگەهدارییا خەلاتکرنێ*\nب شانازی ڤە، ئەم گەلەک کەیفخۆشین کو هەوە ئاگەهدار بکەین ب بڕیارا خەلاتکرنا قوتابیێ ناڤبری وەک رێزگرتن ل بزاڤ، پێشکەفتن، و پشکدارییا وی یا چالاک.\nئەم شانازییێ ب هەبوونا قوتابیێن ڤی ئاستی د قوتابخانا خۆ دا دکەین، و ئەم هیڤیدارین ئەڤ خەلاتە ببیتە هاندەرەک بۆ پێشکەفتنێن پتر.`;
                 break;
             case 'meeting':
-                msg += `🤝 *بابەت: داخوازیا کۆمبوونێ*\nژبەر بەرژەوەندیا قوتابیێ ناڤبری و پەیداکرنا باشترین ژینگەها هاریکار بۆ وی، هیڤیدارین سەرەدانا قوتابخانێ بکەن بۆ کۆمبوونەکا تایبەت ل دۆر چەند بابەتێن گرنگ یێن پەروەردەیی.\nدەمێ پێشنیارکری بۆ کۆمبوونێ: ${formattedDate} دەمژمێر ${formattedTime}.\nهیڤییە ئامادەبوونا خۆ پەسەند بکەن یان پەیوەندیێ ب مە بکەن بۆ دەستنیشانکرنا دەمەکێ دی یێ گونجای. سوپاس بۆ هەڤکاریا هەوە.`;
+                msg += `🤝 *بابەت: داخوازیا کۆمبوونێ*\nژبەر بەرژەوەندییا قوتابیێ ناڤبری و پەیداکرنا باشترین ژینگەها هاریکار بۆ وی، هیڤیدارین سەرەدانا قوتابخانێ بکەن بۆ کۆمبوونەکا تایبەت ل دۆر چەند بابەتێن گرنگ یێن پەروەردەیی.\nدەمێ پێشنیارکری بۆ کۆمبوونێ: ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.\nهیڤییە ئامادەبوونا خۆ پەسەند بکەن یان پەیوەندیێ ب مە بکەن بۆ دەستنیشانکرنا دەمەکێ دی یێ گونجای. سوپاس بۆ هەڤکارییا هەوە.`;
                 break;
             case 'late':
-                msg += `📌 *بابەت: ئاگەهداریا درەنگ هاتنێ*\nمە تێبینی کریە کو قوتابیێ ناڤبری چەندین جاران درەنگ هاتیە دەوامی بێی ئەگەرەکێ باوەرپێکری.\nژبەر گرنگیا ئامادەبوونا وانەیێ ژ دەستپێکێڤە، هیڤیدارین هوین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ چارەسەرکرنا ڤێ کێشەیێ.`;
+                msg += `📌 *بابەت: ئاگەهدارییا درەنگ هاتنێ*\nمە تێبینی کرییە کو قوتابیێ ناڤبری چەندین جاران درەنگ هاتییە دەوامێ بێی ئەگەرەکێ پەسەندکری.\nژبەر گرنگییا ئامادەبوونا وانەیێ ژ دەستپێکێڤە، هیڤیدارین هوین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ چارەسەرکرنا ڤێ کێشەیێ.`;
                 break;
             case 'homework':
-                msg += `📌 *بابەت: نەکرنا ئەرکێن مال*\nمە تێبینی کریە کو قوتابیێ ناڤبری د ڤی دەمێ دووماهیێ دا ئەرکێن خۆ یێن مال بجهـ نەئیناینە.\nپێگیریکرن ب ئەرکێن مال کاریگەریا راستەوخۆ لسەر ئاستێ زانستی یێ قوتابی هەیە، هیڤیدارین دووڤچوونێ بکەن و سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                msg += `📌 *بابەت: ئەنجام نەدانا ئەرکێن مال*\nمە تێبینی کرییە کو قوتابیێ ناڤبری د ڤی دەمێ دووماهییێ دا ئەرکێن خۆ یێن مال چێنەکرینە.\nپێگیرینەکرن ب ئەرکێن مال کاریگەرییا راستەوخۆ لسەر ئاستێ زانستی یێ قوتابی هەیە، هیڤیدارین دیڤچوونێ بکەن و سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
                 break;
             case 'phone':
-                msg += `⚠️ *بابەت: ئینانا مۆبایلێ بۆ قوتابخانێ*\nوەک هوین دزانن، ئینانا مۆبایلا زیرەک بۆ ناڤ قوتابخانێ قەدەغەیە د رێنمایێن پەروەردەیی دا.\nمە مۆبایلا قوتابیێ ناڤبری دەستەسەر کریە. هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ وەرگرتنا مۆبایلێ و گەنگەشەکرنا بابەتی.`;
+                msg += `⚠️ *بابەت: ئینانا مۆبایلێ بۆ قوتابخانێ*\nوەک هوین دزانن، ئینانا مۆبایلا زیرەک بۆ ناڤ قوتابخانێ قەدەغە یە د رێنمایێن پەروەردەیی دا.\nمە مۆبایلێن قوتابیێ ناڤبری ژێ وەرگرتییە. هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ وەرگرتنا مۆبایلێ و بەحسکرنا ڤی بابەتی.`;
                 break;
             case 'uniform':
-                msg += `📌 *بابەت: نەپێگیری ب جلوبەرگێن پێدڤی*\nقوتابیێ ناڤبری پێگیری ب جلوبەرگێن پێدڤی یێن قوتابخانێ نەکریە.\nپێگیریکرن ب یەکپۆشیێ بەشەکە ژ رێسایێن مە، هیڤیدارین هوین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ دووڤچوونا بابەتی.`;
+                msg += `📌 *بابەت: نەپێگیری ب جلوبەرگێن پێدڤی*\nقوتابیێ ناڤبری پێگیری ب جلوبەرگێن فەرمی یێن قوتابخانێ نەکرییە.\nپێگیریکرن ب جلوبەرگان بەشەکە ژ یاسایێن پەروەردێ و قوتابخانێ، هیڤیدارین هوین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ دیڤچوونا ڤی بابەتی.`;
                 break;
             case 'cheating':
-                msg += `⚠️ *بابەت: ئاگەهداریا فێلبازیکرنێ*\nب مخابنی ڤە هەوە ئاگەهدار دکەین کو قوتابیێ ناڤبری د دەمێ ئەنجامدانا ئەزموونێ دا فێلبازی کریە.\nئەڤ رەفتارە دژی رێنمایێن قوتابخانێ یە، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ گەنگەشەکرنا رێکارێن هاتیە وەرگرتن.`;
+                msg += `⚠️ *بابەت: ئاگەهدارییا کۆپیکرن (غشکرن)*\nب مخابنی ڤە هەوە ئاگەهدار دکەین کو قوتابیێ ناڤبری د دەمێ ئەنجامدانا ئەزموونێ دا کۆپیکرن (غش) کرییە.\nئەڤ رەفتارە دژی رێنمایێن پەروەردێ و قوتابخانێ یە، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ بەحسکرنا رێکارێن هاتینە وەرگرتن.`;
                 break;
             case 'vandalism':
-                msg += `⚠️ *بابەت: تێکدانا کەلوپەلێن قوتابخانێ*\nمە تێبینی کریە کو قوتابیێ ناڤبری هندەک ژ کەلوپەلێن قوتابخانێ تێکداینە.\nپاراستنا سامانێ گشتی ئەرکێ هەمووانە، هیڤیدارین هوین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ چارەسەرکرنا بابەتی و قەرەبووکرنا زیانان.`;
+                msg += `⚠️ *بابەت: تێکدانا کەلوپەلێن قوتابخانێ*\nمە تێبینی کرییە کو قوتابیێ ناڤبری هندەک ژ کەلوپەلێن قوتابخانێ خراپکرینە.\nپاراستنا سامانێ گشتی ئەرکێ هەمووانە، هیڤیدارین هوین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ چارەسەرکرنا ڤی بابەتی و قەرەبووکرنا زیانان.`;
                 break;
             case 'truancy':
-                msg += `⚠️ *بابەت: رەڤین ژ قوتابخانێ*\nئاگەهداریا هەوە دکەین کو قوتابیێ ناڤبری ژ قوتابخانێ یان ژ وانەیان رەڤیە.\nئەڤ رەفتارە مەترسیێ لسەر پاراستن و ئاستێ زانستی یێ قوتابی دروست دکەت، هیڤیدارین ب زوترین دەم سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                msg += `⚠️ *بابەت: رەڤین ژ قوتابخانێ*\nئاگەهدارییا هەوە دکەین کو قوتابیێ ناڤبری ژ قوتابخانێ یان ژ وانەیان رەڤییە.\nئەڤ رەفتارە مەترسییێ لسەر پاراستن و ئاستێ زانستی یێ قوتابی دروست دکەت، هیڤیدارین ب زووترین دەم سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
                 break;
             case 'books':
-                msg += `📌 *بابەت: نەئینانا پەرتووکێن خواندنێ*\nقوتابیێ ناڤبری چەندین جاران پەرتووک و دەفتەرێن خۆ یێن پێدڤی بۆ قوتابخانێ نەئیناینە.\nئەڤ چەندە دبیتە رێگر ل پێشیا تێگەهشتنا وی بۆ وانەیان، هیڤیدارین دووڤچوونێ بکەن و سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                msg += `📌 *بابەت: نەئینانا پەرتووکێن خواندنێ*\nقوتابیێ ناڤبری چەندین جاران پەرتووک و دەفتەرێن خۆ یێن پێدڤی بۆ قوتابخانێ نەئیناینە.\nئەڤ چەندە دبیتە رێگر ل پێشییا تێگەهشتنا وی بۆ وانەیان، هیڤیدارین دیڤچوونێ بکەن و سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
                 break;
             case 'bullying':
-                msg += `⚠️ *بابەت: بێزارکرن و بێزارکرن*\nئاگەهداریا هەوە دکەین کو قوتابیێ ناڤبری زۆرداری ل هەڤالێن خۆ کریە.\nئەم ل قوتابخانێ ب چ رەنگان ڤان رەفتاران پەسەند ناکەین، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ گەنگەشەکرنا ڤی بابەتی ب رژدی.`;
+                msg += `⚠️ *بابەت: زۆرداری کرن*\nئاگەهدارییا هەوە دکەین کو قوتابیێ ناڤبری زۆرداری ل هەڤالێن خۆ کرییە.\nئەم ل قوتابخانێ ب چ رەنگان ڤان رەفتاران پەسەند ناکەین، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ بەحسکرنا ڤی بابەتی ب رژدی.`;
                 break;
             case 'sleeping':
-                msg += `📌 *بابەت: خەوتن و بێ ئاگەهی ل پۆلێ*\nمە تێبینی کریە کو قوتابیێ ناڤبری د دەمێ وانەیان دا دخەویت یان گەلەک یێ بێ ئاگەهە.\nئەڤ چەندە کارتێکرنێ ل تێگەهشتنا وی دکەت، هیڤیدارین دووڤچوونا دەمێ خەوا وی بکەن و سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                msg += `📌 *بابەت: نڤستن و بێ ئاگەهی ل پۆلێ*\nمە تێبینی کرییە کو قوتابیێ ناڤبری د دەمێ وانەیان دا دنڤیت یان گەلەک یێ بێ ئاگەهە.\nئەڤ چەندە کارتێکرنێ ل تێگەهشتنا وی دکەت، هیڤیدارین دیڤچوونا دەمێ خەوا وی بکەن و سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
                 break;
             case 'hygiene':
-                msg += `📌 *بابەت: تێبینی لسەر پاقژیا کەسی*\nب رێزڤە دڤێین سەرنجا هەوە رابکێشین کو پێدڤییە قوتابیێ ناڤبری پتر گرنگیێ ب پاقژیا خۆ یا کەسی و جلی بدەت.\nپاقژی بەشەکێ گرنگە ژ ساخلەمی و ژینگەها قوتابخانێ، سوپاس بۆ هەڤکاریا هەوە.`;
+                msg += `📌 *بابەت: تێبینی لسەر پاقژییا قوتابی*\nب رێزڤە مە دڤێت سەرنجا هەوە رابکێشین کو پێدڤییە قوتابیێ ناڤبری پتر گرنگییێ ب پاقژییا خۆ یا کەسی و جلوبەرگێن خۆ بدەت.\nپاقژی بەشەکێ گرنگە ژ ساخلەمی و ژینگەها قوتابخانێ، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} ژ بۆ پتر دیڤچوونا بابەتی. سوپاس بۆ هەڤکارییا هەوە.`;
                 break;
             case 'profanity':
-                msg += `⚠️ *بابەت: بکارئینانا ئاخفتنێن نەجوان*\nئاگەهداریا هەوە دکەین کو قوتابیێ ناڤبری ئاخفتنێن نەجوان و نەگونجای دگەل رەوشتی بکارئیناینە.\nئەڤ رەفتارە ب تەمامی نەیا پەسەندکریە، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ راستڤەکرنا ڤێ رەفتارێ.`;
+                msg += `⚠️ *بابەت: بکارئینانا ئاخفتنێن نەجوان و کرێت*\nئاگەهدارییا هەوە دکەین کو قوتابیێ ناڤبری ئاخفتنێن نەجوان و کرێت و نەگونجای دگەل رەوشتی بکارئیناینە.\nئەڤ رەفتارە ب تەمامی نەیا پەسەندکرییە، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ راستڤەکرنا ڤێ رەفتارێ.`;
                 break;
             case 'smoking':
-                msg += `⚠️ *بابەت: جکەرەکێشان ل قوتابخانێ*\nب مخابنی ڤە هەوە ئاگەهدار دکەین کو قوتابیێ ناڤبری هاتیە دیتن دکێشا جکەرە ل ناڤ قوتابخانێ.\nئەڤ رەفتارە مەترسییە لسەر ساخلەمیا وی و دژی رێنمایانە. هیڤیدارین ب زوترین دەم سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                msg += `⚠️ *بابەت: جگارە کێشان ل قوتابخانێ*\nب مخابنی ڤە هەوە ئاگەهدار دکەین کو قوتابیێ ناڤبری هاتییە دیتن ل دەمێ کێشانا جگارێ ل ناڤ قوتابخانێ.\nئەڤ رەفتارە مەترسییەکە لسەر ساخلەمییا وی و دژی رێنمایێن پەروەردێ و قوتابخانێ نە. هیڤیدارین ب زووترین دەم سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
                 break;
             case 'leave_early':
-                msg += `⚠️ *بابەت: دەرکەفتن بەری ب دووماهی هاتنا خواندنێ*\nقوتابیێ ناڤبری بێی دەستویریا کارگێڕیێ قوتابخانە بجهـ هێلایە بەری کو خواندن ب دووماهی بهێت.\nئەڤ چەندە مەترسیێ لسەر پاراستنا وی دروست دکەت، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                msg += `⚠️ *بابەت: دەرکەفتن بەری ب دووماهی هاتنا خواندنێ*\nقوتابیێ ناڤبری بێی دەستویرییا کارگێڕیێ قوتابخانە بجهـ هێلتییە بەری کو خواندن ب دووماهی بهێت.\nئەڤ چەندە مەترسییێ لسەر پاراستنا وی دروست دکەت، هیڤیدارین سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
                 break;
             case 'participation':
-                msg += `📌 *بابەت: لاوازیا پشکداریکرنێ د وانەیێ دا*\nمامۆستایێن قوتابیێ ناڤبری تێبینی کرینە کو پشکداریا وی د وانەیان دا گەلەک یا لاوازە.\nئەڤە کارتێکرنێ ل ئاستێ وی یێ زانستی دکەت، هیڤیدارین هاندانا وی بکەن و سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                msg += `📌 *بابەت: لاوازیا پشکداریکرنێ د وانەیێ دا*\nمامۆستایێن قوتابیێ ناڤبری تێبینی کرینە کو پشکدارییا وی د وانەیان دا گەلەک یا لاوازە.\nئەڤە کارتێکرنێ ل ئاستێ وی یێ زانستی دکەت، هیڤیدارین پالپشتییا وی بکەن و سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
                 break;
             case 'forbidden':
-                msg += `⚠️ *بابەت: ئینانا تشتێن قەدەغەکری*\nئاگەهداریا هەوە دکەین کو تشتێن قەدەغەکری یێن کو نابیت بهێنە د ناڤ قوتابخانێ دا ل دەف قوتابیێ ناڤبری هاتینە دیتن.\nئەڤە دژی رێسایێن پاراستنێ یە، هیڤیدارین ب لەز سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                msg += `⚠️ *بابەت: ئینانا تشتێن قەدەغەکری*\nئاگەهدارییا هەوە دکەین کو ئینانا تشتێن قەدەغەکری یێن کو نابیت بهێنە د ناڤ قوتابخانێ دا ل دەف قوتابیێ ناڤبری هاتینە دیتن.\nئەڤە دژی یاسایێن پەروەردێ و قوتابخانێ یە، هیڤیدارین ب لەز سەرەدانا قوتابخانێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
                 break;
             case 'health':
-                msg += `🏥 *بابەت: تێکچوونا ساخلەمیێ*\nئەم دڤێت هەوە ئاگەهدار بکەین کو قوتابیێ ناڤبری تووشی نەخۆشیەکێ یان تێکچوونەکا ساخلەمیێ بوویە د ناڤ قوتابخانێ دا.\nهیڤیدارین ب زووترین دەم سەرەدانا مە بکەن یان پەیوەندیێ پێڤە بکەن بۆ پشتڕاستبوون ژ رەوشا وی.`;
+                msg += `🏥 *بابەت: تێکچوونا ساخلەمییێ*\nمە دڤێت هەوە ئاگەهدار بکەین کو قوتابیێ ناڤبری تووشی نەخۆشییەکێ یان تێکچوونەکا ساخلەمییێ بوویە د ناڤ قوتابخانێ دا.\nهیڤیدارین ب زووترین دەم سەرەدانا مە بکەن یان پەیوەندیێ پێڤە بکەن بۆ پشتڕاستبوون ژ رەوشا وی.`;
                 break;
             case 'trip':
-                msg += `🚌 *بابەت: گەشتا زانستی*\nقوتابخانە دێ رابیت ب رێکخستنا گەشتەکا زانستی/بەسەربرنا دەمی.\nداخوازا پەسەندکرنا هەوە دکەین بۆ پشکداریکرنا قوتابیێ ناڤبری د ڤێ گەشتێ دا. هیڤیدارین پەیوەندیێ ب کارگێڕیێ بکەن.`;
+                msg += `🚌 *بابەت: گەشتا زانستی*\nقوتابخانە دێ رابیت ب رێکخستنا گەشتەکا زانستی و گەشتیاری.\nداخوازا پەسەندکرنا هەوە دکەین بۆ پشکداریکرنا قوتابیێ ناڤبری د ڤێ گەشتێ دا. ئەڤ گەشتە دێ هێتە ئەنجامدان ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}. هیڤیدارین پەیوەندیێ ب کارگێڕیێ بکەن.`;
                 break;
             case 'fees':
-                msg += `💰 *بابەت: پارەیێ قوتابخانێ*\nئەم دڤێت هەوە بیربینین ب درەنگ کەفتنا دانا پارەیێ قوتابخانێ یێن پێدڤی لسەر قوتابیێ ناڤبری.\nهیڤیدارین ب زووترین دەم سەرەدانا بەشێ ژمێریاریێ بکەن.`;
+                msg += `💰 *بابەت: پارەیێ قوتابخانێ*\nمە دڤێت هەوە ئاگەهدار بکەین ل سەر درەنگ کەفتنا دانا پارەیێ قوتابخانێ یێن پێدڤی لسەر قوتابیێ ناڤبری.\nهیڤیدارین ب زووترین دەم سەرەدانا بەشێ ژمێریارییێ بکەن.`;
                 break;
             case 'parent_council':
-                msg += `👥 *بابەت: جڤاتا سمیانان*\nئەم هەوە بانگهێشت دکەین بۆ ئامادەبوون د کۆمبوونا جڤاتا سمیانان دا.\nپشکداریا هەوە د گەنگەشەکرنا رەوشا قوتابیان دا گەلەک گرنگە، هیڤیدارین ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} ئامادە بن.`;
+                msg += `👥 *بابەت: جڤاتا سمیانان*\nمە دڤێت هەوە داوەت بکەین بۆ ئامادەبوون د کۆمبوونا جڤاتا سمیانان دا.\nپشکدارییا هەوە د بەحسکرنا رەوشا قوتابییان دا گەلەک گرنگە، هیڤیدارین ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} ئامادە بن.`;
                 break;
             case 'exam_schedule':
-                msg += `📅 *بابەت: خشتەیێ ئەزموونان*\nئەم دڤێت هەوە ئاگەهدار بکەین کو خشتەیێ ئەزموونێن داهاتی هاتیە بەلاڤکرن.\nهیڤیدارین هاندانا قوتابیێ ناڤبری بکەن بۆ خوەئامادەکرنەکا باش.`;
+                msg += `📅 *بابەت: خشتەیێ ئەزموونان*\nمە دڤێت هەوە ئاگەهدار بکەین کو خشتەیێ ئەزموونێن داهاتی هاتیە بەلاڤکرن.\nهیڤیدارین پالپشتییا قوتابیێ ناڤبری بکەن بۆ خوەئامادەکرنەکا باش.`;
                 break;
             case 'document_missing':
                 msg += `📄 *بابەت: کێماسی د بەلگەنامەیان دا*\nهندەک کێماسی د بەلگەنامەیێن پێدڤی یێن قوتابیێ ناڤبری دا هەنە (وەک وێنە یان ناسنامە).\nهیڤیدارین ب زووترین دەم ڤان بەلگەنامەیان بۆ کارگێڕیا قوتابخانێ دابین بکەن.`;
                 break;
             case 'excellent_project':
-                msg += `💡 *بابەت: پرۆژەیێ نایاب*\nئەم سوپاسیا هەوە و قوتابیێ ناڤبری دکەین بۆ ئەنجامدانا پرۆژەیەکێ زانستی یان هونەری یێ گەلەک نایاب.\nئەڤ بەرهەمە نیشانا ژێهاتیبوونێ یە، دەستخۆشیێ لێ دکەین.`;
+                msg += `💡 *بابەت: پرۆژەیێ نایاب*\nئەم سوپاسییا هەوە و قوتابیێ ناڤبری دکەین بۆ ئەنجامدانا پرۆژەیەکێ زانستی یان هونەری یێ گەلەک نایاب.\nئەڤ بەرهەمە نیشانا ژێهاتیبوونێ یە، دەستخۆشیێ لێ دکەین.`;
                 break;
             case 'activity':
-                msg += `🎭 *بابەت: پشکداریکرن د چالاکیەکێ دا*\nئەم دڤێت هەوە ئاگەهدار بکەین کو قوتابیێ ناڤبری هاتیە دەستنیشانکرن بۆ پشکداریکرن د چالاکیەکا قوتابخانێ دا.\nپالپشتیا هەوە دێ بیتە هاندەرەک مەزن بۆ وی.`;
+                msg += `🎭 *بابەت: پشکداریکرن د چالاکیەکێ دا*\nمە دڤێت هەوە ئاگەهدار بکەین کو قوتابیێ ناڤبری هاتیە دەستنیشانکرن بۆ پشکداریکرن د چالاکیەکا قوتابخانێ دا.\nپالپشتییا هەوە دێ بیتە هاندەرەک مەزن بۆ وی.`;
                 break;
             case 'late_pickup':
-                msg += `🚗 *بابەت: درەنگ وەرگرتنا قوتابی*\nتێبینی هاتیە کرن کو هوین گەلەک جاران درەنگ دهێن بۆ وەرگرتنا قوتابیێ ناڤبری پشتی دووماهی هاتنا خواندنێ.\nهیڤیدارین پێگیریێ ب دەمێ دووماهی هاتنا خواندنێ بکەن ل پێخەمەت پاراستنا وی.`;
+                msg += `🚗 *بابەت: درەنگ وەرگرتنا قوتابی*\nتێبینی هاتیە کرن کو هوین گەلەک جاران درەنگ دهێن بۆ وەرگرتنا قوتابیێ ناڤبری پشتی دووماهی هاتنا خواندنێ.\nهیڤیدارین پێگیرییێ ب دەمێ دووماهی هاتنا خواندنێ بکەن ل پێخەمەت پاراستنا وی.`;
                 break;
             case 'bus_issue':
-                msg += `🚐 *بابەت: کێشە د ڤەگوهاستنێ دا*\nئاگەهداریا هەوە دکەین کو تێبینی یان کێشەیەک ل دۆر ڤەگوهاستنا (پاسا) قوتابیێ ناڤبری هەیە.\nهیڤیدارین پەیوەندیێ ب سەرپەرشتیارێ هێلێ یان کارگێڕیێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                msg += `🚐 *بابەت: کێشە د ڤەگوهاستنێ دا*\nئاگەهدارییا هەوە دکەین کو تێبینی یان کێشەیەک ل دۆر ڤەگوهاستنا قوتابیێ ناڤبری هەیە.\nهیڤیدارین پەیوەندیێ ب سمیانێ هێلێ یان کارگێڕیێ بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                break;
+            case 'forgot_id':
+                msg += `📌 *بابەت: نەپێڤەکرنا ناسنامەیا قوتابخانێ*\nمە تێبینی کرییە کو قوتابیێ ناڤبری بێی ناسنامەیا قوتابخانێ هاتییە دەوامێ.\nپێڤەکرنا ناسنامەیێ پێدڤییە بۆ نیاسین و پاراستنا قوتابییان، هیڤیدارین دیڤچوونێ بکەن.`;
+                break;
+            case 'disrespect_teacher':
+                msg += `⚠️ *بابەت: رێزنەگرتنا مامۆستای*\nب مخابنی ڤە، قوتابیێ ناڤبری رەفتارەکا نەگونجای دگەل مامۆستایێ خۆ کرییە.\nرێزگرتن ژ مامۆستایان لایەنەکێ گرنگێ پەروەردەیێ یە، هیڤیدارین سەرەدانا مە بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
+                break;
+            case 'lack_focus':
+                msg += `📌 *بابەت: کێم تەرکیزی د وانەیان دا*\nمامۆستایێن قوتابیێ ناڤبری تێبینی کرینە کو تەرکیزا وی د پۆلێ دا یا کێمە و مژوولی تشتێن دی یە.\nهیڤیدارین دیڤچوونا رەوشا وی یا خواندنێ بکەن دا کو ئاستێ وی باشتر ببیت.`;
+                break;
+            case 'eating_in_class':
+                msg += `📌 *بابەت: خوارن د ناڤ پۆلێ دا*\nقوتابیێ ناڤبری د دەمێ وانەیێ دا خوارن یان ڤەخوارن خوارینە کو ئەڤە قەدەغە یە.\nهیڤیدارین شیرەتان لێ بکەن کو رێزێ ل دەمێ وانەیێ بگریت.`;
+                break;
+            case 'chewing_gum':
+                msg += `📌 *بابەت: جووینا بنیشتی*\nتێبینی هاتییە کرن کو قوتابیێ ناڤبری د ناڤ پۆلێ دا بنیشت جوویە، کو پێچەوانەیی یاسایێن پۆلێ یە.\nهیڤیدارین پالپشتییا وی بکەن بۆ پێگیریکرن ب رێنمایان.`;
+                break;
+            case 'failing_exam':
+                msg += `⚠️ *بابەت: دەرنەچوون د ئەزموونێ دا*\nب مخابنی ڤە ئەنجامێن ئەزموونا قوتابیێ ناڤبری د ئاستێ پێدڤی دا نەبوون و دەرنەچوویە.\nهیڤیدارین سەرەدانا مە بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime} بۆ بەحسکرنا رەوشا وی یا زانستی.`;
+                break;
+            case 'damaging_books':
+                msg += `⚠️ *بابەت: تێکدانا پەرتووکان*\nقوتابیێ ناڤبری پەرتووکێن قوتابخانێ یێن پێ هاتینە دان تێکداینە یان دڕاندینە.\nهیڤیدارین هوشیاریێ بدەنە وی ل سەر پاراستنا کەلوپەلێن خواندنێ.`;
+                break;
+            case 'makeup_accessories':
+                msg += `📌 *بابەت: بکارئینانا تشتێن نەگونجای*\nقوتابیێ ناڤبری بکارئینانا مکیاجی یان تشتێن جوانکارییێ کرییە کو دژی یاسایێن جلوبەرگان و پەروەردەیی نە د ناڤ قوتابخانێ دا.\nهیڤیدارین دیڤچوونێ بکەن.`;
+                break;
+            case 'hallway_noise':
+                msg += `📌 *بابەت: دروستکرنا دەنگەدەنگێ د مەمەڕان دا*\nقوتابیێ ناڤبری د دەمێ وانەیان دا یان ل بێهنڤەدانێ دەنگەدەنگەکا زێدە د مەمەڕان دا دروست کرییە کو بوویە ئەگەرێ بێزارکرنا پۆلێن دی.\nهیڤیدارین پێگیریێ ب ئارامییێ بکەت.`;
+                break;
+            case 'leave_class_no_permission':
+                msg += `⚠️ *بابەت: دەرکەفتن ژ پۆلێ بێی دەستویریێ*\nقوتابیێ ناڤبری د دەمێ وانەیێ دا بێی دەستویرییا مامۆستای ژ پۆلێ دەرکەفتییە.\nئەڤ رەفتارە نەیا پەسەندکرییە، هیڤیدارین سەرەدانا مە بکەن ل رێکەفتی ${formattedDate} دەمژمێر ${formattedTime}.`;
                 break;
             default:
                 msg += `نامەیەک ژ قوتابخانێ ل دۆر قوتابی.`;
         }
 
         msg += `\n\nدگەل رێز و سڵاڤان،\n*کارگێڕیا قوتابخانێ*`;
-    } else if (!isEn) {
-        msg = `تحية طيبة وبعد،\nيسر إدارة المدرسة أن تتواصل معكم بصفتكم شركاءنا في العملية التربوية.\n`;
-        msg += `نود إعلامكم بخصوص الطالب/ة: ${name}\n`;
-        msg += `المرحلة الدراسية: الصف ${sClass} - شعبة (${sSection})\n\n`;
-
-        switch (reason) {
-            case 'absence':
-                msg += `📌 *الموضوع: إشعار غياب*\nلقد لاحظنا من خلال سجلات الحضور والغياب تكرار غياب الطالب المذكور أعلاه بدون تقديم عذر رسمي أو طبي.\nنظراً لأهمية الالتزام بالدوام وتأثير الغياب المباشر على التحصيل العلمي، نرجو منكم الحضور إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة الأمر.`;
-                break;
-            case 'badBehavior':
-                msg += `📌 *الموضوع: إشعار بسلوك مخالف*\nلقد تم تسجيل مخالفة سلوكية من قبل الطالب المذكور.\nنحن في إدارة المدرسة نولي اهتماماً كبيراً بتقويم سلوك أبنائنا الطلبة جنباً إلى جنب مع تعليمهم.\nلذا، نرجو حضوركم إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة الإجراءات التربوية اللازمة.`;
-                break;
-            case 'lowGrades':
-                msg += `📌 *الموضوع: تنبيه بانخفاض المستوى الدراسي*\nمن خلال متابعة التقييمات المستمرة، لاحظنا تراجعاً وانخفاضاً في مستوى الطالب الدراسي في الفترة الأخيرة.\nنظراً لحرصنا على مستقبل الطالب، نرجو حضوركم إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة سبل تدارك هذا التراجع وتحسين مستواه العلمي.`;
-                break;
-            case 'goodBehavior':
-                msg += `🌟 *الموضوع: إشادة بالسلوك المتميز*\nيسعدنا جداً في إدارة المدرسة أن ننقل لكم فخرنا واعتزازنا بالطالب المذكور أعلاه، حيث يتمتع بسلوك حسن وأخلاق عالية والتزام تام بقوانين المدرسة.\nهذا الانضباط يعكس بوضوح حسن تربيتكم ومتابعتكم المستمرة. نشكر لكم جهودكم ونتمنى للطالب دوام التميز والتوفيق.`;
-                break;
-            case 'highGrades':
-                msg += `🎓 *الموضوع: تهنئة بالتفوق الدراسي*\nنبعث لكم بأجمل التهاني والتبريكات بمناسبة التفوق الدراسي والدرجات العالية التي حققها الطالب المذكور.\nإن هذا التميز هو ثمرة لجهده واجتهاده المستمر، وثمرة لدعمكم المتواصل له. إدارة المدرسة فخورة جداً به وتتمنى له المزيد من التألق والنجاح في مسيرته العلمية.`;
-                break;
-            case 'fight':
-                msg += `⚠️ *الموضوع: استدعاء بسبب شجار*\nيؤسفنا جداً إعلامكم بأن الطالب المذكور قد تورط في شجار واحتكاك مع زملائه داخل الحرم المدرسي.\nبناءً على لوائح الانضباط المدرسي، نرجو منكم ضرورة الحضور إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} للوقوف على أسباب المشكلة ومناقشة الإجراءات التربوية اللازمة.`;
-                break;
-            case 'reward':
-                msg += `🏆 *الموضوع: إشعار تكريم*\nبكل فخر واعتزاز، يسعدنا إعلامكم بأنه تقرر تكريم الطالب المذكور تقديراً لجهوده، تميزه، ومشاركته الفعالة.\nنحن فخورون بوجود طلاب يمتلكون هذا الشغف والحرص في مدرستنا، ونتمنى أن يكون هذا التكريم حافزاً له لمزيد من الإبداع.`;
-                break;
-            case 'meeting':
-                msg += `🤝 *الموضوع: دعوة لاجتماع خاص*\nحرصاً منا على مصلحة الطالب المذكور وتوفير أفضل بيئة داعمة له، نرجو منكم التفضل بالحضور إلى المدرسة لعقد اجتماع خاص ومناقشة بعض الأمور التربوية والتعليمية الهامة.\nالموعد المقترح للاجتماع هو: ${formattedDate} في تمام الساعة ${formattedTime}.\nيرجى تأكيد الحضور أو التواصل معنا لتحديد موعد بديل مناسب. شاكرين لكم حسن تعاونكم الدائم.`;
-                break;
-            case 'late':
-                msg += `📌 *الموضوع: إشعار تأخر صباحي*\nلقد لاحظنا تكرار تأخر الطالب المذكور عن الدوام الصباحي بدون عذر مقبول.\nنظراً لأهمية الالتزام بالوقت، نرجو منكم الحضور إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة الأمر ومعالجة هذه المشكلة.`;
-                break;
-            case 'homework':
-                msg += `📌 *الموضوع: إهمال الواجبات المدرسية*\nلقد تم رصد تقصير مستمر من قبل الطالب المذكور في أداء الواجبات المدرسية المطلوبة منه.\nنظراً لتأثير ذلك المباشر على مستواه العلمي، نرجو منكم الحضور إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمتابعة الموضوع ومناقشته.`;
-                break;
-            case 'phone':
-                msg += `⚠️ *الموضوع: مخالفة جلب الهاتف المحمول*\nنود إعلامكم بأنه تم ضبط هاتف محمول مع الطالب المذكور داخل الحرم المدرسي، وهو ما يخالف قوانين وأنظمة المدرسة.\nنرجو منكم التفضل بالحضور إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة الإجراءات التربوية اللازمة.`;
-                break;
-            case 'uniform':
-                msg += `📌 *الموضوع: عدم الالتزام بالزي المدرسي*\nلقد خالف الطالب المذكور قواعد الزي المدرسي الرسمي الخاص بالمدرسة.\nبما أن الالتزام بالزي الموحد هو جزء من الانضباط المدرسي، نرجو منكم الحضور إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة هذا الأمر.`;
-                break;
-            case 'cheating':
-                msg += `⚠️ *الموضوع: حالة غش*\nيؤسفنا إعلامكم بأنه تم ضبط الطالب المذكور في حالة غش أثناء أداء الامتحان.\nيعد هذا السلوك مخالفة صريحة للأنظمة المدرسية ويؤثر سلباً على مصداقية تقييم الطالب. نرجو حضوركم إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة الإجراءات المتخذة.`;
-                break;
-            case 'vandalism':
-                msg += `⚠️ *الموضوع: إشعار بتخريب ممتلكات المدرسة*\nنود إعلامكم بأن الطالب المذكور قد قام بتخريب بعض ممتلكات المدرسة عمداً.\nيعد الحفاظ على الممتلكات العامة مسؤولية الجميع، ونرجو حضوركم إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة الأمر والتعويض عن الأضرار.`;
-                break;
-            case 'truancy':
-                msg += `⚠️ *الموضوع: إشعار بالهروب من المدرسة*\nلقد تم تسجيل حالة هروب (تسرب) للطالب المذكور من المدرسة أو من الحصص الدراسية.\nهذا التصرف يشكل خطراً على سلامة الطالب ومستقبله الدراسي، نرجو منكم الحضور بشكل عاجل إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime}.`;
-                break;
-            case 'books':
-                msg += `📌 *الموضوع: عدم إحضار الكتب المدرسية*\nلقد تكرر عدم إحضار الطالب المذكور للكتب والدفاتر المدرسية المطلوبة للحصص.\nهذا النقص يعيق مشاركته الفعالة وفهمه للدروس، نرجو منكم متابعة الأمر والحضور أو التواصل معنا بتاريخ ${formattedDate} الساعة ${formattedTime}.`;
-                break;
-            case 'bullying':
-                msg += `⚠️ *الموضوع: حالة تنمر*\nنود إعلامكم بأن الطالب المذكور قد قام بالتنمر على زملائه.\nنحن لا نتسامح إطلاقاً مع هذا السلوك، ونرجو حضوركم إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة هذا الأمر بشكل جدي.`;
-                break;
-            case 'sleeping':
-                msg += `📌 *الموضوع: النوم وعدم الانتباه في الفصل*\nلقد لاحظنا أن الطالب المذكور يعاني من قلة التركيز أو ينام أثناء الحصص الدراسية.\nهذا يؤثر بشكل كبير على استيعابه ومستواه، نرجو منكم متابعة تنظيم أوقات نومه والتواصل معنا بتاريخ ${formattedDate} الساعة ${formattedTime}.`;
-                break;
-            case 'hygiene':
-                msg += `📌 *الموضوع: ملاحظة حول النظافة الشخصية*\nنود لفت انتباهكم بلطف إلى أن الطالب المذكور بحاجة إلى اهتمام أكبر بنظافته الشخصية ومظهره العام.\nالحفاظ على النظافة جزء مهم من الصحة والبيئة المدرسية، نرجو متابعة هذا الجانب شاكرين تعاونكم.`;
-                break;
-            case 'profanity':
-                msg += `⚠️ *الموضوع: استخدام ألفاظ نابية*\nلقد تم تسجيل استخدام الطالب المذكور لألفاظ غير لائقة ومخالفة للأخلاق المدرسية.\nيعد هذا السلوك غير مقبول بتاتاً، ونرجو منكم الحضور إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة وتقويم هذا السلوك.`;
-                break;
-            case 'smoking':
-                msg += `⚠️ *الموضوع: التدخين داخل المدرسة*\nيؤسفنا إعلامكم بأنه تم ضبط الطالب المذكور وهو يدخن داخل الحرم المدرسي.\nهذا السلوك يشكل خطراً على صحته ويخالف أنظمة المدرسة بشدة. نرجو منكم الحضور بشكل عاجل إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لاتخاذ الإجراءات اللازمة.`;
-                break;
-            case 'leave_early':
-                msg += `⚠️ *الموضوع: مغادرة المدرسة بدون إذن*\nلقد غادر الطالب المذكور المدرسة قبل انتهاء الدوام الرسمي وبدون أخذ إذن من الإدارة.\nهذا التصرف يشكل خطراً على سلامته، نرجو منكم الحضور إلى المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة هذا التجاوز.`;
-                break;
-            case 'participation':
-                msg += `📌 *الموضوع: ضعف المشاركة والتفاعل الصفي*\nلاحظ معلمو الطالب المذكور ضعفاً ملحوظاً في مشاركته داخل الفصل وعدم تفاعله مع الدروس.\nهذا يؤثر على تقييمه وفهمه للمادة العلمية، نرجو منكم حثه على المشاركة والتواصل معنا بتاريخ ${formattedDate} الساعة ${formattedTime}.`;
-                break;
-            case 'forbidden':
-                msg += `⚠️ *الموضوع: إحضار مواد ممنوعة*\nنود إعلامكم بأنه تم ضبط مواد ممنوعة (لا يسمح بإدخالها للمدرسة) بحوزة الطالب المذكور.\nيعد هذا انتهاكاً لسياسة الأمن والسلامة في المدرسة. نرجو حضوركم فوراً بتاريخ ${formattedDate} الساعة ${formattedTime} لمعالجة الموقف.`;
-                break;
-            case 'health':
-                msg += `🏥 *الموضوع: وعكة صحية*\nنود إعلامكم بأن الطالب المذكور أعلاه قد تعرض لوعكة صحية أثناء تواجده في المدرسة.\nنرجو منكم الحضور بأسرع وقت ممكن للاطمئنان على صحته أو التواصل معنا للضرورة.`;
-                break;
-            case 'trip':
-                msg += `🚌 *الموضوع: رحلة مدرسية*\nتعتزم المدرسة تنظيم رحلة علمية/ترفيهية قريباً.\nنرجو تزويدنا بموافقتكم على مشاركة الطالب المذكور في هذه الرحلة. للتفاصيل يرجى مراجعة الإدارة.`;
-                break;
-            case 'fees':
-                msg += `💰 *الموضوع: أقساط مدرسية*\nنود تذكيركم بضرورة تسديد الأقساط المدرسية المتأخرة الخاصة بالطالب المذكور.\nنرجو مراجعة قسم الحسابات في المدرسة بأقرب فرصة ممكنة.`;
-                break;
-            case 'parent_council':
-                msg += `👥 *الموضوع: مجلس الآباء*\nيسعدنا دعوتكم لحضور اجتماع مجلس الآباء والمعلمين.\nمشاركتكم تساهم في تحسين البيئة التعليمية، نرجو حضوركم بتاريخ ${formattedDate} الساعة ${formattedTime}.`;
-                break;
-            case 'exam_schedule':
-                msg += `📅 *الموضوع: جدول الامتحانات*\nنود إعلامكم بأنه تم توزيع جدول الامتحانات القادمة.\nنرجو منكم حث الطالب المذكور على الاستعداد الجيد والمثابرة لتحقيق أفضل النتائج.`;
-                break;
-            case 'document_missing':
-                msg += `📄 *الموضوع: نواقص في المستمسكات*\nنحيطكم علماً بوجود نقص في المستمسكات الرسمية الخاصة بالطالب المذكور (مثل الصور أو الهوية).\nنرجو الإسراع في تزويد الإدارة بها لإكمال ملف الطالب.`;
-                break;
-            case 'excellent_project':
-                msg += `💡 *الموضوع: مشروع متميز*\nتتقدم إدارة المدرسة بالشكر والتقدير للطالب المذكور ولكم لتقديم مشروع أو نشاط متميز جداً.\nهذا الإنجاز يعكس مدى الإبداع والمثابرة، نتمنى له دوام التوفيق.`;
-                break;
-            case 'activity':
-                msg += `🎭 *الموضوع: مشاركة بنشاط مدرسي*\nنود إعلامكم بأنه تم اختيار الطالب المذكور للمشاركة في نشاط مدرسي مميز.\nدعمكم وتشجيعكم له سيكون له أثر إيجابي كبير على أدائه.`;
-                break;
-            case 'late_pickup':
-                msg += `🚗 *الموضوع: التأخر في استلام الطالب*\nلوحظ تكرار التأخر في استلام الطالب المذكور بعد انتهاء الدوام الرسمي.\nحفاظاً على سلامته وتجنباً لبقائه منفرداً، نرجو الالتزام بموعد الانصراف.`;
-                break;
-            case 'bus_issue':
-                msg += `🚐 *الموضوع: مشكلة في النقل*\nنود إعلامكم بوجود ملاحظة أو مشكلة تتعلق بنقل الطالب المذكور (حافلة المدرسة).\nنرجو التواصل مع مشرف النقل أو مراجعة الإدارة بتاريخ ${formattedDate} الساعة ${formattedTime}.`;
-                break;
-            default:
-                msg += `رسالة تواصل من المدرسة بخصوص الطالب.`;
-        }
-
-        msg += `\n\nمع خالص تحياتنا وتقديرنا،\n*إدارة المدرسة*`;
     } else if (isEn) {
-        msg = `Greetings,\nThe school administration would like to communicate with you as our partners in the educational process.\n`;
+        msg = `Greetings and respect,\nThe school administration wishes to contact you as our partners in the educational process.\n`;
         msg += `We would like to inform you regarding the student: ${name}\n`;
         msg += `Educational Level: Grade ${sClass} - Section (${sSection})\n\n`;
 
         switch (reason) {
-            case 'absence':
-                msg += `📌 *Subject: Notice of Absence*\nWe have noticed through our attendance records that the aforementioned student has been frequently absent without an official or medical excuse.\nGiven the importance of consistent attendance and its direct impact on academic achievement, we request your attendance at the school on ${formattedDate} at ${formattedTime} to discuss the matter.`;
-                break;
-            case 'badBehavior':
-                msg += `📌 *Subject: Notice of Misbehavior*\nA behavioral violation has been recorded by the aforementioned student.\nWe at the school administration place great importance on correcting our students' behavior alongside their education.\nTherefore, we request your attendance at the school on ${formattedDate} at ${formattedTime} to discuss the necessary educational measures.`;
-                break;
-            case 'lowGrades':
-                msg += `📌 *Subject: Notice of Academic Decline*\nThrough our continuous assessments, we have noticed a recent decline in the student's academic performance.\nOut of concern for the student's future, we request your attendance at the school on ${formattedDate} at ${formattedTime} to discuss ways to address this decline and improve their academic standing.`;
-                break;
-            case 'goodBehavior':
-                msg += `🌟 *Subject: Commendation for Excellent Behavior*\nWe at the school administration are delighted to express our pride in the aforementioned student, as they exhibit excellent behavior, high morals, and complete adherence to school rules.\nThis discipline clearly reflects your excellent upbringing and continuous follow-up. We thank you for your efforts and wish the student continued excellence.`;
-                break;
-            case 'highGrades':
-                msg += `🎓 *Subject: Congratulations on Academic Excellence*\nWe send you our warmest congratulations on the academic excellence and high grades achieved by the aforementioned student.\nThis excellence is the result of their continuous effort and diligence, as well as your ongoing support. The school administration is very proud of them and wishes them further brilliance and success in their educational journey.`;
-                break;
-            case 'fight':
-                msg += `⚠️ *Subject: Summons Due to an Altercation*\nWe regret to inform you that the aforementioned student was involved in an altercation with their classmates within the school premises.\nAccording to the school's disciplinary regulations, we request your attendance at the school on ${formattedDate} at ${formattedTime} to understand the causes of the issue and discuss the necessary educational measures.`;
-                break;
-            case 'reward':
-                msg += `🏆 *Subject: Notice of Recognition*\nWith great pride, we are pleased to inform you that it has been decided to recognize and reward the aforementioned student in appreciation of their efforts, excellence, and active participation.\nWe are proud to have students with such passion and dedication in our school, and we hope this recognition serves as an incentive for further creativity.`;
-                break;
-            case 'meeting':
-                msg += `🤝 *Subject: Invitation for a Special Meeting*\nOut of our concern for the best interests of the aforementioned student and to provide the best supportive environment, we kindly request your attendance at the school for a special meeting to discuss some important educational matters.\nThe proposed time for the meeting is: ${formattedDate} at ${formattedTime}.\nPlease confirm your attendance or contact us to schedule another suitable time. Thank you for your constant cooperation.`;
-                break;
-            case 'late':
-                msg += `📌 *Subject: Notice of Morning Tardiness*\nWe have noticed that the aforementioned student has been frequently late to school without a valid excuse.\nGiven the importance of punctuality, we request your attendance at the school on ${formattedDate} at ${formattedTime} to address this issue.`;
-                break;
-            case 'homework':
-                msg += `📌 *Subject: Notice of Incomplete Homework*\nWe have observed that the aforementioned student has been consistently failing to complete their assigned homework.\nAs this directly affects their academic progress, we request your attendance at the school on ${formattedDate} at ${formattedTime} to discuss the matter.`;
-                break;
-            case 'phone':
-                msg += `⚠️ *Subject: Violation for Bringing a Phone*\nWe would like to inform you that the aforementioned student brought a mobile phone to school, which violates our school rules.\nWe request your attendance at the school on ${formattedDate} at ${formattedTime} to discuss the necessary disciplinary actions.`;
-                break;
-            case 'uniform':
-                msg += `📌 *Subject: Uniform Violation*\nThe aforementioned student has violated the school's official uniform dress code.\nSince adhering to the uniform policy is part of school discipline, we request your attendance at the school on ${formattedDate} at ${formattedTime} to discuss this matter.`;
-                break;
-            case 'cheating':
-                msg += `⚠️ *Subject: Notice of Cheating*\nWe regret to inform you that the aforementioned student was caught cheating during an exam.\nThis behavior is a clear violation of school regulations. We request your attendance at the school on ${formattedDate} at ${formattedTime} to discuss the actions taken.`;
-                break;
-            case 'vandalism':
-                msg += `⚠️ *Subject: Notice of Vandalism*\nWe would like to inform you that the aforementioned student has intentionally damaged school property.\nPreserving public property is everyone's responsibility. We request your attendance at the school on ${formattedDate} at ${formattedTime} to discuss the matter.`;
-                break;
-            case 'truancy':
-                msg += `⚠️ *Subject: Notice of Truancy / Skipping School*\nA case of truancy (skipping classes or school) has been recorded for the aforementioned student.\nThis behavior poses a risk to the student's safety and academic future. We urgently request your attendance at the school on ${formattedDate} at ${formattedTime}.`;
-                break;
-            case 'books':
-                msg += `📌 *Subject: Missing Textbooks*\nThe aforementioned student has repeatedly failed to bring their required textbooks and notebooks to class.\nThis hinders their participation and understanding of the lessons. We request your attendance or communication on ${formattedDate} at ${formattedTime}.`;
-                break;
-            case 'bullying':
-                msg += `⚠️ *Subject: Notice of Bullying*\nWe would like to inform you that the aforementioned student has been involved in bullying their peers.\nWe have a zero-tolerance policy for this behavior. We request your attendance at the school on ${formattedDate} at ${formattedTime} to discuss this matter seriously.`;
-                break;
-            case 'sleeping':
-                msg += `📌 *Subject: Sleeping/Inattentiveness in Class*\nWe have noticed that the aforementioned student has been sleeping or showing a lack of focus during classes.\nThis significantly affects their comprehension and performance. We kindly request that you monitor their sleep schedule and communicate with us on ${formattedDate} at ${formattedTime}.`;
-                break;
-            case 'hygiene':
-                msg += `📌 *Subject: Notice regarding Personal Hygiene*\nWe kindly want to bring to your attention that the aforementioned student needs to pay more attention to their personal hygiene and appearance.\nMaintaining hygiene is an important part of health and the school environment. Thank you for your cooperation.`;
-                break;
-            case 'profanity':
-                msg += `⚠️ *Subject: Use of Profanity*\nIt has been recorded that the aforementioned student used inappropriate language and profanity.\nThis behavior is completely unacceptable. We request your attendance at the school on ${formattedDate} at ${formattedTime} to address and correct this behavior.`;
-                break;
-            case 'smoking':
-                msg += `⚠️ *Subject: Notice of Smoking*\nWe regret to inform you that the aforementioned student was caught smoking on school premises.\nThis behavior poses a risk to their health and strongly violates school regulations. We urgently request your attendance at the school on ${formattedDate} at ${formattedTime}.`;
-                break;
-            case 'leave_early':
-                msg += `⚠️ *Subject: Leaving School Early*\nThe aforementioned student left the school premises before the end of the school day without permission.\nThis poses a risk to their safety. We request your attendance at the school on ${formattedDate} at ${formattedTime} to discuss this violation.`;
-                break;
-            case 'participation':
-                msg += `📌 *Subject: Lack of Class Participation*\nTeachers have noticed a significant lack of participation and engagement from the aforementioned student during classes.\nThis affects their understanding and evaluation. We request your communication or attendance on ${formattedDate} at ${formattedTime}.`;
-                break;
-            case 'forbidden':
-                msg += `⚠️ *Subject: Bringing Forbidden Items*\nWe would like to inform you that the aforementioned student was found in possession of forbidden items not allowed on school premises.\nThis violates our safety and security policies. We request your urgent attendance on ${formattedDate} at ${formattedTime} to address this situation.`;
-                break;
-            case 'health':
-                msg += `🏥 *Subject: Health Issue*\nWe would like to inform you that the aforementioned student experienced a health issue while at school.\nPlease visit us as soon as possible to check on their health or contact us if necessary.`;
-                break;
-            case 'trip':
-                msg += `🚌 *Subject: School Trip*\nThe school is planning an educational/recreational trip soon.\nPlease provide your consent for the aforementioned student to participate in this trip. For details, please check with the administration.`;
-                break;
-            case 'fees':
-                msg += `💰 *Subject: School Fees*\nWe would like to remind you to settle the outstanding school fees for the aforementioned student.\nPlease visit the school's accounting department at your earliest convenience.`;
-                break;
-            case 'parent_council':
-                msg += `👥 *Subject: Parents Council*\nWe are pleased to invite you to attend the Parents and Teachers Council meeting.\nYour participation contributes to improving the educational environment. We request your attendance on ${formattedDate} at ${formattedTime}.`;
-                break;
-            case 'exam_schedule':
-                msg += `📅 *Subject: Exam Schedule*\nWe would like to inform you that the upcoming exam schedule has been distributed.\nPlease encourage the aforementioned student to prepare well and persevere to achieve the best results.`;
-                break;
-            case 'document_missing':
-                msg += `📄 *Subject: Missing Documents*\nPlease be informed that there are missing official documents for the aforementioned student (such as photos or ID).\nPlease provide them to the administration as soon as possible to complete the student's file.`;
-                break;
-            case 'excellent_project':
-                msg += `💡 *Subject: Excellent Project*\nThe school administration extends its thanks and appreciation to the aforementioned student and to you for presenting a very distinguished project or activity.\nThis achievement reflects their creativity and perseverance. We wish them continued success.`;
-                break;
-            case 'activity':
-                msg += `🎭 *Subject: School Activity Participation*\nWe would like to inform you that the aforementioned student has been selected to participate in a special school activity.\nYour support and encouragement will have a great positive impact on their performance.`;
-                break;
-            case 'late_pickup':
-                msg += `🚗 *Subject: Late Pickup*\nWe have noticed repeated delays in picking up the aforementioned student after official school hours.\nFor their safety and to avoid them being left alone, please adhere to the dismissal time.`;
-                break;
-            case 'bus_issue':
-                msg += `🚐 *Subject: Transportation Issue*\nWe would like to inform you of an issue related to the transportation of the aforementioned student (school bus).\nPlease contact the transportation supervisor or visit the administration on ${formattedDate} at ${formattedTime}.`;
-                break;
-            default:
-                msg += `Communication from the school regarding the student.`;
+            case 'absence': msg += `📌 *Subject: Notice of Absence*\nWe have noticed in the attendance records that the aforementioned student has been absent frequently without an acceptable or medical excuse.\nGiven the importance of committing to attendance and its impact on the academic level, we hope you visit the school on ${formattedDate} at ${formattedTime} to discuss this matter.`; break;
+            case 'badBehavior': msg += `📌 *Subject: Notice of Bad Behavior*\nInappropriate behavior has been recorded by the aforementioned student.\nWe at the school administration attach great importance to correcting students' behaviors alongside their education.\nTherefore, we hope you visit the school on ${formattedDate} at ${formattedTime} to discuss the necessary educational measures.`; break;
+            case 'lowGrades': msg += `📌 *Subject: Notice of Academic Decline*\nThrough the follow-up of evaluations, we have noticed that the student's academic level has declined recently.\nOut of concern for the student's future, we hope you visit the school on ${formattedDate} at ${formattedTime} to discuss improving their academic level.`; break;
+            case 'goodBehavior': msg += `🌟 *Subject: Commendation for Good Behavior*\nThe school administration is very pleased to be proud of the aforementioned student, as they have good behavior, high morals, and abide by the school rules.\nThis commitment clearly reflects your good upbringing. Thank you for your efforts, and we wish the student success.`; break;
+            case 'highGrades': msg += `🎓 *Subject: Congratulations on Academic Success*\nWe direct the most beautiful congratulations to you on the occasion of the academic success and high grades achieved by the aforementioned student.\nThis progress is the fruit of their efforts and day-and-night work, and the fruit of your support. The school administration is very proud of them and wishes them more successes.`; break;
+            case 'fight': msg += `⚠️ *Subject: Summons Due to Fighting*\nWe regret to inform you that the aforementioned student got into a fight with their peers inside the school.\nAccording to the school guidelines, we hope you visit the school on ${formattedDate} at ${formattedTime} to know the reasons for the problem and discuss the necessary measures.`; break;
+            case 'reward': msg += `🏆 *Subject: Reward Notice*\nWith pride, we are very pleased to inform you of the decision to reward the aforementioned student in appreciation of their efforts, progress, and active participation.\nWe are proud to have students of this level in our school, and we hope this reward will be an incentive for more progress.`; break;
+            case 'meeting': msg += `🤝 *Subject: Meeting Request*\nFor the benefit of the aforementioned student and to provide the best supportive environment for them, we hope you visit the school for a special meeting regarding some important educational matters.\nThe proposed time for the meeting: ${formattedDate} at ${formattedTime}.\nPlease confirm your attendance or contact us to set another suitable time. Thank you for your cooperation.`; break;
+            case 'late': msg += `📌 *Subject: Notice of Late Arrival*\nWe have noticed that the aforementioned student has arrived late to school several times without an acceptable excuse.\nGiven the importance of attending the class from the beginning, we hope you visit the school on ${formattedDate} at ${formattedTime} to resolve this issue.`; break;
+            case 'homework': msg += `📌 *Subject: Neglect of Homework*\nWe have noticed that the aforementioned student has not done their homework recently.\nCommitting to homework has a direct impact on the student's academic level, we hope you follow up and visit the school on ${formattedDate} at ${formattedTime}.`; break;
+            case 'phone': msg += `⚠️ *Subject: Bringing a Phone to School*\nAs you know, bringing a smartphone into the school is prohibited in the educational guidelines.\nWe have confiscated the aforementioned student's phone. We hope you visit the school on ${formattedDate} at ${formattedTime} to receive the phone and discuss this matter.`; break;
+            case 'uniform': msg += `📌 *Subject: Non-compliance with Uniform*\nThe aforementioned student has not complied with the required school uniform.\nCommitting to the uniform is part of our rules, we hope you visit the school on ${formattedDate} at ${formattedTime} to follow up on this matter.`; break;
+            case 'cheating': msg += `⚠️ *Subject: Notice of Cheating*\nWe regret to inform you that the aforementioned student cheated while taking the exam.\nThis behavior is against the school guidelines, we hope you visit the school on ${formattedDate} at ${formattedTime} to discuss the taken measures.`; break;
+            case 'vandalism': msg += `⚠️ *Subject: Damaging School Property*\nWe have noticed that the aforementioned student has damaged some of the school's property.\nProtecting public property is everyone's duty, we hope you visit the school on ${formattedDate} at ${formattedTime} to resolve this matter and compensate for the damages.`; break;
+            case 'truancy': msg += `⚠️ *Subject: Truancy from School*\nWe inform you that the aforementioned student has fled from school or from classes.\nThis behavior poses a risk to the protection and academic level of the student, we hope you visit the school as soon as possible on ${formattedDate} at ${formattedTime}.`; break;
+            case 'books': msg += `📌 *Subject: Not Bringing Textbooks*\nThe aforementioned student has repeatedly not brought their required books and notebooks to school.\nThis becomes an obstacle to their understanding of the lessons, we hope you follow up and visit the school on ${formattedDate} at ${formattedTime}.`; break;
+            case 'bullying': msg += `⚠️ *Subject: Bullying*\nWe inform you that the aforementioned student has bullied their peers.\nWe do not approve of these behaviors in any way at the school, we hope you visit the school on ${formattedDate} at ${formattedTime} to seriously discuss this matter.`; break;
+            case 'sleeping': msg += `📌 *Subject: Sleeping and Inattention in Class*\nWe have noticed that the aforementioned student sleeps or is very inattentive during classes.\nThis affects their understanding, we hope you follow up on their sleeping time and visit the school on ${formattedDate} at ${formattedTime}.`; break;
+            case 'hygiene': msg += `📌 *Subject: Notice on Personal Hygiene*\nWith respect, we would like to draw your attention that the aforementioned student needs to pay more attention to their personal hygiene and clothes.\nHygiene is an important part of health and the school environment, thank you for your cooperation.`; break;
+            case 'profanity': msg += `⚠️ *Subject: Using Bad and Ugly Words*\nWe inform you that the aforementioned student has used bad, ugly, and inappropriate words contrary to morals.\nThis behavior is completely unapproved, we hope you visit the school on ${formattedDate} at ${formattedTime} to correct this behavior.`; break;
+            case 'smoking': msg += `⚠️ *Subject: Smoking in School*\nWe regret to inform you that the aforementioned student was seen smoking inside the school.\nThis behavior is a danger to their health and against the guidelines. We hope you visit the school as soon as possible on ${formattedDate} at ${formattedTime}.`; break;
+            case 'leave_early': msg += `⚠️ *Subject: Leaving Before School Ends*\nThe aforementioned student left the school without the administration's permission before classes ended.\nThis creates a risk to their safety, we hope you visit the school on ${formattedDate} at ${formattedTime}.`; break;
+            case 'participation': msg += `📌 *Subject: Weak Participation in Class*\nThe aforementioned student's teachers have noticed that their participation in classes is very weak.\nThis affects their academic level, we hope you support them and visit the school on ${formattedDate} at ${formattedTime}.`; break;
+            case 'forbidden': msg += `⚠️ *Subject: Bringing Prohibited Items*\nWe inform you that prohibited items that should not be brought into the school were found with the aforementioned student.\nThis is against the safety rules, we hope you visit the school quickly on ${formattedDate} at ${formattedTime}.`; break;
+            case 'health': msg += `🏥 *Subject: Health Issue*\nWe would like to inform you that the aforementioned student suffered an illness or health issue inside the school.\nWe hope you visit us as soon as possible or contact us to be assured of their condition.`; break;
+            case 'trip': msg += `🚌 *Subject: Scientific Trip*\nThe school will organize a scientific/leisure trip.\nWe ask for your approval for the aforementioned student to participate in this trip. We hope you contact the administration.`; break;
+            case 'fees': msg += `💰 *Subject: School Fees*\nWe would like to remind you of the delay in paying the required school fees for the aforementioned student.\nWe hope you visit the accounting department as soon as possible.`; break;
+            case 'parent_council': msg += `👥 *Subject: Parents Council*\nWe would like to invite you to attend the parents council meeting.\nYour participation in discussing the students' situation is very important, we hope you attend on ${formattedDate} at ${formattedTime}.`; break;
+            case 'exam_schedule': msg += `📅 *Subject: Exam Schedule*\nWe would like to inform you that the upcoming exam schedule has been distributed.\nWe hope you support the aforementioned student for good preparation.`; break;
+            case 'document_missing': msg += `📄 *Subject: Missing Documents*\nThere are some missing required documents for the aforementioned student (such as photos or ID).\nWe hope you provide these documents to the school administration as soon as possible.`; break;
+            case 'excellent_project': msg += `💡 *Subject: Excellent Project*\nWe thank you and the aforementioned student for doing a very excellent scientific or artistic project.\nThis work is a sign of proficiency, we commend them.`; break;
+            case 'activity': msg += `🎭 *Subject: Participation in an Activity*\nWe would like to inform you that the aforementioned student has been selected to participate in a school activity.\nYour support will be a great incentive for them.`; break;
+            case 'late_pickup': msg += `🚗 *Subject: Late Pickup of Student*\nIt has been noticed that you often come late to pick up the aforementioned student after classes end.\nWe hope you adhere to the end time of classes for the sake of their safety.`; break;
+            case 'bus_issue': msg += `🚐 *Subject: Transportation Issue*\nWe inform you that there is an observation or issue regarding the transportation of the aforementioned student.\nWe hope you contact the line supervisor or the administration on ${formattedDate} at ${formattedTime}.`; break;
+            case 'forgot_id': msg += `📌 *Subject: Not Wearing School ID*\nWe have noticed that the aforementioned student came to school without wearing the school ID.\nWearing the ID is necessary for identifying and protecting students, we hope you follow up.`; break;
+            case 'disrespect_teacher': msg += `⚠️ *Subject: Disrespecting a Teacher*\nRegrettably, the aforementioned student behaved inappropriately with their teacher.\nRespecting teachers is an important aspect of education, we hope you visit us on ${formattedDate} at ${formattedTime}.`; break;
+            case 'lack_focus': msg += `📌 *Subject: Lack of Focus in Classes*\nThe aforementioned student's teachers have noticed that their focus in class is low and they are busy with other things.\nWe hope you follow up on their study situation so their level improves.`; break;
+            case 'eating_in_class': msg += `📌 *Subject: Eating in Class*\nThe aforementioned student ate food or drinks during the class, which is prohibited.\nWe hope you advise them to respect class time.`; break;
+            case 'chewing_gum': msg += `📌 *Subject: Chewing Gum*\nIt has been noticed that the aforementioned student chewed gum in class, which is against the class rules.\nWe hope you support them to abide by the guidelines.`; break;
+            case 'failing_exam': msg += `⚠️ *Subject: Failing an Exam*\nRegrettably, the results of the aforementioned student's exam were not at the required level and they failed.\nWe hope you visit us on ${formattedDate} at ${formattedTime} to discuss their academic situation.`; break;
+            case 'damaging_books': msg += `⚠️ *Subject: Damaging Books*\nThe aforementioned student has damaged or torn the provided school books.\nWe hope you warn them about protecting the study materials.`; break;
+            case 'makeup_accessories': msg += `📌 *Subject: Using Inappropriate Items*\nThe aforementioned student used makeup or cosmetic items which are against the uniform and educational rules inside the school.\nWe hope you follow up.`; break;
+            case 'hallway_noise': msg += `📌 *Subject: Making Noise in Hallways*\nThe aforementioned student made excessive noise in the hallways during classes or break time, which caused annoyance to other classes.\nWe hope they abide by calmness.`; break;
+            case 'leave_class_no_permission': msg += `⚠️ *Subject: Leaving Class Without Permission*\nThe aforementioned student left the class without the teacher's permission during the lesson.\nThis behavior is not approved, we hope you visit us on ${formattedDate} at ${formattedTime}.`; break;
+            default: msg += `A message from the school regarding a student.`;
         }
 
-        msg += `\n\nWith our sincere regards and appreciation,\n*School Administration*`;
-    }
+        msg += `\n\nWith respect and regards,\n*School Administration*`;
+    } else {
+        msg = `تحية واحترام،\nترغب إدارة المدرسة بالتواصل معكم كشركاء لنا في العملية التربوية.\n`;
+        msg += `نود إعلامكم بخصوص الطالب: ${name}\n`;
+        msg += `المرحلة الدراسية: الصف ${sClass} - الشعبة (${sSection})\n\n`;
 
+        switch (reason) {
+            case 'absence': msg += `📌 *الموضوع: إشعار غياب*\nلقد لاحظنا في سجلات الحضور أن الطالب المذكور قد تغيب كثيراً عن الدوام بدون عذر مقبول أو طبي.\nنظراً لأهمية الالتزام بالحضور وتأثيره على المستوى العلمي، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة هذا الموضوع.`; break;
+            case 'badBehavior': msg += `📌 *الموضوع: إشعار بسلوك سيء*\nتم تسجيل سلوك غير لائق من قبل الطالب المذكور.\nنحن في إدارة المدرسة نولي أهمية كبيرة لتقويم سلوكيات الطلاب جنباً إلى جنب مع تعليمهم.\nلذلك، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة الإجراءات التربوية اللازمة.`; break;
+            case 'lowGrades': msg += `📌 *الموضوع: إشعار بانخفاض المستوى العلمي*\nمن خلال متابعة التقييمات، لاحظنا أن المستوى الدراسي للطالب قد تراجع في الفترة الأخيرة.\nحرصاً منا على مستقبل الطالب، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة تحسين مستواه العلمي.`; break;
+            case 'goodBehavior': msg += `🌟 *الموضوع: إشادة بالسلوك الجيد*\nيسعدنا جداً في إدارة المدرسة أن نفتخر بالطالب المذكور، حيث يتمتع بسلوك جيد وأخلاق عالية ويلتزم بقوانين المدرسة.\nهذا الالتزام يعكس بوضوح تربيتكم الحسنة. شكراً لجهودكم ونتمنى للطالب التوفيق.`; break;
+            case 'highGrades': msg += `🎓 *الموضوع: تهنئة بالتفوق العلمي*\nنوجه لكم أجمل التهاني بمناسبة التفوق العلمي والدرجات العالية التي حققها الطالب المذكور.\nهذا التقدم هو ثمرة لجهده وسهره، وثمرة لدعمكم. إدارة المدرسة فخورة جداً به ونتمنى له المزيد من النجاح.`; break;
+            case 'fight': msg += `⚠️ *الموضوع: استدعاء بسبب شجار*\nنبلغكم بأسف شديد أن الطالب المذكور قد تورط في شجار مع زملائه داخل المدرسة.\nوفقاً لتعليمات المدرسة، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمعرفة أسباب المشكلة ومناقشة الإجراءات اللازمة.`; break;
+            case 'reward': msg += `🏆 *الموضوع: إشعار مكافأة*\nبكل فخر، يسعدنا أن نعلمكم بقرار مكافأة الطالب المذكور تقديراً لجهوده، وتقدمه، ومشاركته الفعالة.\nنحن فخورون بوجود طلاب بهذا المستوى في مدرستنا، ونأمل أن تكون هذه المكافأة حافزاً لمزيد من التقدم.`; break;
+            case 'meeting': msg += `🤝 *الموضوع: طلب اجتماع*\nمن أجل مصلحة الطالب المذكور وتوفير أفضل بيئة داعمة له، نأمل منكم زيارة المدرسة لاجتماع خاص حول بعض المواضيع التربوية الهامة.\nالوقت المقترح للاجتماع هو: ${formattedDate} الساعة ${formattedTime}.\nيرجى تأكيد الحضور أو التواصل معنا لتحديد وقت آخر مناسب. شكراً لتعاونكم.`; break;
+            case 'late': msg += `📌 *الموضوع: إشعار بالتأخر*\nلقد لاحظنا أن الطالب المذكور قد تأخر عن الدوام عدة مرات بدون عذر مقبول.\nنظراً لأهمية حضور الدرس من البداية، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمعالجة هذه المشكلة.`; break;
+            case 'homework': msg += `📌 *الموضوع: إهمال الواجبات المدرسية*\nلقد لاحظنا أن الطالب المذكور لم يقم بأداء واجباته المدرسية مؤخراً.\nالالتزام بالواجبات المدرسية له تأثير مباشر على المستوى العلمي للطالب، نأمل منكم المتابعة وزيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'phone': msg += `⚠️ *الموضوع: جلب هاتف للمدرسة*\nكما تعلمون، فإن جلب الهاتف الذكي إلى المدرسة ممنوع في التعليمات التربوية.\nلقد قمنا بمصادرة هاتف الطالب المذكور. نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لاستلام الهاتف ومناقشة هذا الموضوع.`; break;
+            case 'uniform': msg += `📌 *الموضوع: عدم الالتزام بالزي المدرسي*\nلم يلتزم الطالب المذكور بالزي المدرسي المطلوب.\nالالتزام بالزي هو جزء من قوانيننا، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمتابعة هذا الموضوع.`; break;
+            case 'cheating': msg += `⚠️ *الموضوع: إشعار بالغش*\nنبلغكم بأسف أن الطالب المذكور قد قام بالغش أثناء أداء الامتحان.\nهذا السلوك يخالف تعليمات المدرسة، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة الإجراءات المتخذة.`; break;
+            case 'vandalism': msg += `⚠️ *الموضوع: تخريب ممتلكات المدرسة*\nلقد لاحظنا أن الطالب المذكور قد قام بتخريب بعض ممتلكات المدرسة.\nحماية الممتلكات العامة واجب على الجميع، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمعالجة هذا الموضوع والتعويض عن الأضرار.`; break;
+            case 'truancy': msg += `⚠️ *الموضوع: الهروب من المدرسة*\nنعلمكم بأن الطالب المذكور قد هرب من المدرسة أو من الحصص.\nهذا السلوك يشكل خطراً على حماية ومستوى الطالب العلمي، نأمل منكم زيارة المدرسة بأسرع وقت في تاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'books': msg += `📌 *الموضوع: عدم إحضار الكتب المدرسية*\nلم يقم الطالب المذكور بإحضار كتبه ودفاتره المطلوبة للمدرسة عدة مرات.\nهذا الأمر يصبح عائقاً أمام فهمه للدروس، نأمل منكم المتابعة وزيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'bullying': msg += `⚠️ *الموضوع: التنمر*\nنعلمكم بأن الطالب المذكور قد تنمر على زملائه.\nنحن لا نقبل هذه السلوكيات بأي شكل في المدرسة، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة هذا الموضوع بجدية.`; break;
+            case 'sleeping': msg += `📌 *الموضوع: النوم وعدم الانتباه في الفصل*\nلقد لاحظنا أن الطالب المذكور ينام أو يكون غير منتبه كثيراً خلال الحصص.\nهذا يؤثر على استيعابه، نأمل منكم متابعة وقت نومه وزيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'hygiene': msg += `📌 *الموضوع: ملاحظة حول النظافة الشخصية*\nباحترام نود أن نلفت انتباهكم إلى أن الطالب المذكور يحتاج للاهتمام أكثر بنظافته الشخصية وملابسه.\nالنظافة جزء مهم من الصحة والبيئة المدرسية، شكراً لتعاونكم.`; break;
+            case 'profanity': msg += `⚠️ *الموضوع: استخدام ألفاظ بذيئة*\nنعلمكم بأن الطالب المذكور قد استخدم ألفاظاً سيئة وبذيئة وغير لائقة بالأخلاق.\nهذا السلوك غير مقبول تماماً، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime} لتقويم هذا السلوك.`; break;
+            case 'smoking': msg += `⚠️ *الموضوع: التدخين في المدرسة*\nنبلغكم بأسف أن الطالب المذكور قد شوهد يدخن داخل المدرسة.\nهذا السلوك يشكل خطراً على صحته ويخالف التعليمات. نأمل منكم زيارة المدرسة بأسرع وقت بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'leave_early': msg += `⚠️ *الموضوع: الخروج قبل انتهاء الدوام*\nلقد غادر الطالب المذكور المدرسة بدون إذن الإدارة قبل انتهاء الحصص.\nهذا الأمر يشكل خطراً على سلامته، نأمل منكم زيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'participation': msg += `📌 *الموضوع: ضعف المشاركة في الفصل*\nلاحظ معلمو الطالب المذكور أن مشاركته في الحصص ضعيفة جداً.\nهذا يؤثر على مستواه العلمي، نأمل منكم دعمه وزيارة المدرسة بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'forbidden': msg += `⚠️ *الموضوع: إحضار أشياء ممنوعة*\nنعلمكم بأنه تم العثور على أشياء ممنوعة لا ينبغي إحضارها إلى المدرسة بحوزة الطالب المذكور.\nهذا يخالف قواعد السلامة، نأمل منكم زيارة المدرسة بسرعة بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'health': msg += `🏥 *الموضوع: مشكلة صحية*\nنود إعلامكم بأن الطالب المذكور قد أصيب بمرض أو مشكلة صحية داخل المدرسة.\nنأمل منكم زيارتنا بأسرع وقت أو الاتصال بنا للاطمئنان على حالته.`; break;
+            case 'trip': msg += `🚌 *الموضوع: رحلة علمية*\nستقوم المدرسة بتنظيم رحلة علمية/ترفيهية.\nنطلب موافقتكم لمشاركة الطالب المذكور في هذه الرحلة. نأمل منكم التواصل مع الإدارة.`; break;
+            case 'fees': msg += `💰 *الموضوع: الأقساط المدرسية*\nنود تذكيركم بتأخر دفع الأقساط المدرسية المطلوبة للطالب المذكور.\nنأمل منكم زيارة قسم الحسابات بأسرع وقت ممكن.`; break;
+            case 'parent_council': msg += `👥 *الموضوع: مجلس الآباء*\nنود دعوتكم لحضور اجتماع مجلس الآباء.\nمشاركتكم في مناقشة وضع الطلاب مهمة جداً، نأمل حضوركم بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'exam_schedule': msg += `📅 *الموضوع: جدول الامتحانات*\nنود إعلامكم بأنه قد تم توزيع جدول الامتحانات القادمة.\nنأمل منكم دعم الطالب المذكور للتحضير الجيد.`; break;
+            case 'document_missing': msg += `📄 *الموضوع: نواقص في المستمسكات*\nهناك بعض النواقص في المستمسكات المطلوبة للطالب المذكور (مثل الصور أو الهوية).\nنأمل منكم توفير هذه المستمسكات لإدارة المدرسة بأسرع وقت ممكن.`; break;
+            case 'excellent_project': msg += `💡 *الموضوع: مشروع ممتاز*\nنشكركم ونشكر الطالب المذكور على القيام بمشروع علمي أو فني ممتاز جداً.\nهذا العمل علامة على الكفاءة، نهنئهم على ذلك.`; break;
+            case 'activity': msg += `🎭 *الموضوع: المشاركة في نشاط*\nنود إعلامكم بأنه قد تم اختيار الطالب المذكور للمشاركة في نشاط مدرسي.\nدعمكم سيكون دافعاً كبيراً له.`; break;
+            case 'late_pickup': msg += `🚗 *الموضوع: التأخر في استلام الطالب*\nلوحظ أنكم تتأخرون غالباً في القدوم لاستلام الطالب المذكور بعد انتهاء الحصص.\nنأمل منكم الالتزام بوقت انتهاء الحصص من أجل سلامته.`; break;
+            case 'bus_issue': msg += `🚐 *الموضوع: مشكلة في النقل*\nنعلمكم بوجود ملاحظة أو مشكلة حول نقل الطالب المذكور.\nنأمل منكم التواصل مع مشرف الخط أو الإدارة بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'forgot_id': msg += `📌 *الموضوع: عدم ارتداء هوية المدرسة*\nلقد لاحظنا أن الطالب المذكور جاء للدوام بدون ارتداء هوية المدرسة.\nارتداء الهوية ضروري لمعرفة الطلاب وحمايتهم، نأمل منكم المتابعة.`; break;
+            case 'disrespect_teacher': msg += `⚠️ *الموضوع: عدم احترام المعلم*\nمع الأسف، قام الطالب المذكور بتصرف غير لائق مع معلمه.\nاحترام المعلمين جانب مهم من التربية، نأمل منكم زيارتنا بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            case 'lack_focus': msg += `📌 *الموضوع: قلة التركيز في الدروس*\nلاحظ معلمو الطالب المذكور أن تركيزه في الفصل قليل ومنشغل بأشياء أخرى.\nنأمل منكم متابعة وضعه الدراسي لكي يتحسن مستواه.`; break;
+            case 'eating_in_class': msg += `📌 *الموضوع: الأكل داخل الفصل*\nقام الطالب المذكور بتناول طعام أو شراب أثناء الحصة وهذا ممنوع.\nنأمل منكم نصيحته باحترام وقت الحصة.`; break;
+            case 'chewing_gum': msg += `📌 *الموضوع: مضغ العلكة*\nلوحظ أن الطالب المذكور قام بمضغ العلكة في الفصل، وهو مخالف لقوانين الفصل.\nنأمل منكم دعمه للالتزام بالتعليمات.`; break;
+            case 'failing_exam': msg += `⚠️ *الموضوع: الرسوب في الامتحان*\nمع الأسف، لم تكن نتائج امتحان الطالب المذكور في المستوى المطلوب ورسب.\nنأمل منكم زيارتنا بتاريخ ${formattedDate} الساعة ${formattedTime} لمناقشة وضعه العلمي.`; break;
+            case 'damaging_books': msg += `⚠️ *الموضوع: تخريب الكتب*\nلقد قام الطالب المذكور بتخريب أو تمزيق كتب المدرسة المعطاة له.\nنأمل منكم تحذيره حول حماية مواد الدراسة.`; break;
+            case 'makeup_accessories': msg += `📌 *الموضوع: استخدام أشياء غير لائقة*\nقام الطالب المذكور باستخدام المكياج أو مواد التجميل وهي ضد قوانين الزي والتربية داخل المدرسة.\nنأمل منكم المتابعة.`; break;
+            case 'hallway_noise': msg += `📌 *الموضوع: إحداث ضوضاء في الممرات*\nقام الطالب المذكور بإحداث ضوضاء زائدة في الممرات أثناء الحصص أو في الاستراحة مما أدى إلى إزعاج الفصول الأخرى.\nنأمل منه الالتزام بالهدوء.`; break;
+            case 'leave_class_no_permission': msg += `⚠️ *الموضوع: الخروج من الفصل بدون إذن*\nغادر الطالب المذكور الفصل أثناء الحصة بدون إذن المعلم.\nهذا السلوك غير مقبول، نأمل منكم زيارتنا بتاريخ ${formattedDate} الساعة ${formattedTime}.`; break;
+            default: msg += `رسالة من المدرسة حول طالب.`;
+        }
+
+        msg += `\n\nمع الاحترام والتقدير،\n*إدارة المدرسة*`;
+    }
     return msg;
 };
