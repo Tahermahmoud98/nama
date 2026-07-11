@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پلاتفۆرما ئاگەهداریێن قوتابخانێ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="container glass-panel">
+        <header>
+            <div class="lang-switcher">
+                <select id="langSelect" class="lang-select">
+                    <option value="ar">عربی</option>
+                    <option value="ku" selected>کوردی</option>
+                    <option value="en">English</option>
+                </select>
+                <button id="manageStudentsBtn" class="top-btn"><i class="fa-solid fa-users-gear"></i> <span data-i18n="btn_manage_students">رێڤەبرنا قوتابیان</span></button>
+            </div>
+            <div class="logo">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="header-text">
+                <h1 data-i18n="title">پلاتفۆرما ئاگەهداریێن قوتابخانێ</h1>
+                <p data-i18n="subtitle">ب ساهی نامەیێن واتسئاپێ بۆ سمیانێن قوتابیان بەرهەڤ بکە و فرێبکە</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+
+            <!-- Preview Section -->
+            <section class="preview-section">
+                <div class="preview-header">
+                    <h2 data-i18n="preview_title"><i class="fa-regular fa-eye"></i> دیتنا نامەیێ</h2>
+                </div>
+                <div class="whatsapp-preview">
+                    <div class="wa-header">
+                        <div class="wa-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="wa-info">
+                            <div class="wa-name" data-i18n="wa_name">سمیانێ قوتابی</div>
+                            <div class="wa-status" data-i18n="wa_status">ئۆنلاینە</div>
+                        </div>
+                    </div>
+                    <div class="wa-body">
+                        <div class="wa-message">
+                            <p id="messagePreview" data-i18n="preview_placeholder">هیڤییە پێزانینێن قوتابی بنڤیسە دا نامەیێ ل ڤێرێ ببینی...</p>
+                            <span class="wa-time" id="previewTime">10:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="sendBtn" class="send-btn" data-i18n="btn_send">
+                    <i class="fa-brands fa-whatsapp"></i> فرێکرن ب واتسئاپێ
+                </button>
+            </section>
+
+            <!-- Form Section -->
+            <section class="form-section">
+                <!-- Mode Switcher -->
+                <div class="mode-switcher" style="display: flex; gap: 1rem; margin-bottom: 2rem; background: var(--glass-bg); padding: 0.5rem; border-radius: 12px; border: 1px solid var(--glass-border);">
+                    <button id="modeStudentsBtn" class="mode-btn active" data-i18n="mode_students" style="flex: 1; padding: 0.8rem; border: none; border-radius: 8px; background: var(--accent-color); color: white; font-weight: bold; cursor: pointer; transition: all 0.3s ease;"><i class="fa-solid fa-user-graduate"></i> قوتابیان</button>
+                    <button id="modeTeachersBtn" class="mode-btn" data-i18n="mode_teachers" style="flex: 1; padding: 0.8rem; border: none; border-radius: 8px; background: transparent; color: var(--text-secondary); font-weight: bold; cursor: pointer; transition: all 0.3s ease;"><i class="fa-solid fa-chalkboard-user"></i> مامۆستایان</button>
+                </div>
+                <div class="form-group">
+                    <label id="lblStudentName" data-i18n="lbl_student_name"><i class="fa-solid fa-user-graduate"></i> ناڤێ قوتابی</label>
+                    <div class="input-with-button">
+                        <input type="text" id="studentName" list="studentsList" data-i18n-ph="ph_student_name" placeholder="ناڤێ قوتابی یێ سێقۆڵی بنڤیسە">
+                        <button id="bulkSelectBtn" class="secondary-btn"><i class="fa-solid fa-users"></i> <span data-i18n="btn_bulk_select">دیارکرنا کۆمەڵ</span></button>
+                    </div>
+                    <datalist id="studentsList"></datalist>
+                </div>
+
+                <div class="row-group" id="classSectionGroup">
+                    <div class="form-group">
+                        <label data-i18n="lbl_student_class"><i class="fa-solid fa-chalkboard-user"></i> پۆل</label>
+                        <input type="text" id="studentClass" data-i18n-ph="ph_student_class" placeholder="نموونە: حەفتێ بنەڕەتی">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="lbl_student_section"><i class="fa-solid fa-layer-group"></i> هۆبە</label>
+                        <input type="text" id="studentSection" data-i18n-ph="ph_student_section" placeholder="نموونە: أ">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label id="lblParentNumber" data-i18n="lbl_parent_number"><i class="fa-solid fa-phone"></i> ژمارا واتسئاپا سمیانی</label>
+                    <input type="tel" id="parentNumber" data-i18n-ph="ph_parent_number" placeholder="نموونە: +9647XXXXXXXXX">
+                    <small class="hint" data-i18n="hint_parent_number">هیڤییە ژمارێ دگەل کۆدێ وەلاتی بنڤیسە (وەک +964 بۆ عێراقێ)</small>
+                </div>
+
+                <div class="row-group">
+                    <div class="form-group">
+                        <label data-i18n="lbl_event_date"><i class="fa-solid fa-calendar-days"></i> رێکەفتا سەرەدانێ</label>
+                        <input type="date" id="eventDate">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="lbl_event_time"><i class="fa-solid fa-clock"></i> دەمێ سەرەدانێ</label>
+                        <input type="time" id="eventTime">
+                    </div>
+                </div>
+
+                <div class="form-group reasons-group" style="position: relative;">
+                    <label data-i18n="lbl_reason"><i class="fa-solid fa-list-check"></i> ئەگەرێ ئاگەهداریێ (ئێکێ هەلبژێرە)</label>
+                    <button type="button" id="openReasonModalBtn" class="reason-select-btn" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem; background: var(--glass-bg); color: var(--text-primary); border: 1px solid var(--glass-border); border-radius: 8px; cursor: pointer; transition: all 0.3s ease; font-size: 1.1rem; margin-bottom: 1.5rem; text-align: right;">
+                        <span id="selectedReasonDisplay" style="display: flex; align-items: center; gap: 1rem;">
+                            <i class="fa-solid fa-person-walking-arrow-right icon-absence" style="font-size: 1.5rem; color: #f59e0b;"></i>
+                            <span data-i18n="reason_absence" style="font-weight: 600;">گەلەک نەهاتن</span>
+                        </span>
+                        <i class="fa-solid fa-chevron-down" style="color: var(--text-secondary);"></i>
+                    </button>
+
+                    <!-- Reason Select Dropdown -->
+                    <div id="reasonModal" class="custom-dropdown" style="display: none; position: absolute; top: calc(100% - 1rem); left: 0; right: 0; background: var(--bg-color); z-index: 1000; border: 1px solid var(--glass-border); border-radius: 8px; box-shadow: 0 15px 35px rgba(0,0,0,0.6); padding: 1rem;">
+                        
+                        <!-- Student Reasons -->
+                        <div class="radio-grid" id="studentReasonsGrid" style="max-height: 350px; overflow-y: auto; padding-left: 5px; margin: 0;">
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="absence" checked>
+                            <div class="card-content">
+                                <i class="fa-solid fa-person-walking-arrow-right icon-absence"></i>
+                                <span data-i18n="reason_absence">گەلەک نەهاتن</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="badBehavior">
+                            <div class="card-content">
+                                <i class="fa-solid fa-circle-exclamation icon-bad"></i>
+                                <span data-i18n="reason_badBehavior">رەفتارا خراب</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="lowGrades">
+                            <div class="card-content">
+                                <i class="fa-solid fa-arrow-trend-down icon-low"></i>
+                                <span data-i18n="reason_lowGrades">نمرەیێن نزم</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="goodBehavior">
+                            <div class="card-content">
+                                <i class="fa-solid fa-star icon-good"></i>
+                                <span data-i18n="reason_goodBehavior">رەفتارا باش</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="highGrades">
+                            <div class="card-content">
+                                <i class="fa-solid fa-arrow-trend-up icon-high"></i>
+                                <span data-i18n="reason_highGrades">نمرێن بلند</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="fight">
+                            <div class="card-content">
+                                <i class="fa-solid fa-hand-fist icon-fight"></i>
+                                <span data-i18n="reason_fight">شەڕ ل قوتابخانێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="reward">
+                            <div class="card-content">
+                                <i class="fa-solid fa-award icon-reward"></i>
+                                <span data-i18n="reason_reward">پاداشت / رێزلێنان</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="meeting">
+                            <div class="card-content">
+                                <i class="fa-solid fa-handshake icon-meeting"></i>
+                                <span data-i18n="reason_meeting">بانگهێشتنا جڤینێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="late">
+                            <div class="card-content">
+                                <i class="fa-solid fa-clock-rotate-left icon-late" style="color: #f97316;"></i>
+                                <span data-i18n="reason_late">درەنگ هاتن</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="homework">
+                            <div class="card-content">
+                                <i class="fa-solid fa-book-open-reader icon-homework" style="color: #14b8a6;"></i>
+                                <span data-i18n="reason_homework">نەکرنا ئەرکێن مال</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="phone">
+                            <div class="card-content">
+                                <i class="fa-solid fa-mobile-screen-button icon-phone" style="color: #64748b;"></i>
+                                <span data-i18n="reason_phone">ئینانا مۆبایلێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="uniform">
+                            <div class="card-content">
+                                <i class="fa-solid fa-shirt icon-uniform" style="color: #ec4899;"></i>
+                                <span data-i18n="reason_uniform">نەپێگیری ب جلوبەرگان</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="cheating">
+                            <div class="card-content">
+                                <i class="fa-solid fa-copy icon-cheating" style="color: #ef4444;"></i>
+                                <span data-i18n="reason_cheating">فێلبازیکرن</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="vandalism">
+                            <div class="card-content">
+                                <i class="fa-solid fa-house-crack icon-vandalism" style="color: #b91c1c;"></i>
+                                <span data-i18n="reason_vandalism">تێکدانا کەلوپەلان</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="truancy">
+                            <div class="card-content">
+                                <i class="fa-solid fa-person-running icon-truancy" style="color: #eab308;"></i>
+                                <span data-i18n="reason_truancy">رەڤین ژ قوتابخانێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="books">
+                            <div class="card-content">
+                                <i class="fa-solid fa-book icon-books" style="color: #3b82f6;"></i>
+                                <span data-i18n="reason_books">نەئینانا پەرتووکان</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="bullying">
+                            <div class="card-content">
+                                <i class="fa-solid fa-face-angry icon-bullying" style="color: #ea580c;"></i>
+                                <span data-i18n="reason_bullying">بێزارکرن</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="sleeping">
+                            <div class="card-content">
+                                <i class="fa-solid fa-bed icon-sleeping" style="color: #6366f1;"></i>
+                                <span data-i18n="reason_sleeping">خەوتن ل پۆلێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="hygiene">
+                            <div class="card-content">
+                                <i class="fa-solid fa-shower icon-hygiene" style="color: #06b6d4;"></i>
+                                <span data-i18n="reason_hygiene">نەپاقژی</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="profanity">
+                            <div class="card-content">
+                                <i class="fa-solid fa-comment-slash icon-profanity" style="color: #9f1239;"></i>
+                                <span data-i18n="reason_profanity">ئاخفتنێن نەجوان</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="smoking">
+                            <div class="card-content">
+                                <i class="fa-solid fa-smoking icon-smoking" style="color: #64748b;"></i>
+                                <span data-i18n="reason_smoking">جکەرەکێشان</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="leave_early">
+                            <div class="card-content">
+                                <i class="fa-solid fa-door-open icon-leave-early" style="color: #a16207;"></i>
+                                <span data-i18n="reason_leave_early">دەرکەفتن بەری دووماهی هاتنێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="participation">
+                            <div class="card-content">
+                                <i class="fa-solid fa-user-minus icon-participation" style="color: #6b7280;"></i>
+                                <span data-i18n="reason_participation">نەپشکداریکرن</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="forbidden">
+                            <div class="card-content">
+                                <i class="fa-solid fa-ban icon-forbidden" style="color: #ef4444;"></i>
+                                <span data-i18n="reason_forbidden">تشتێن قەدەغەکری</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="health">
+                            <div class="card-content">
+                                <i class="fa-solid fa-notes-medical icon-health" style="color: #10b981;"></i>
+                                <span data-i18n="reason_health">نەخۆشی</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="trip">
+                            <div class="card-content">
+                                <i class="fa-solid fa-bus icon-trip" style="color: #3b82f6;"></i>
+                                <span data-i18n="reason_trip">گەشتا زانستی</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="fees">
+                            <div class="card-content">
+                                <i class="fa-solid fa-file-invoice-dollar icon-fees" style="color: #f59e0b;"></i>
+                                <span data-i18n="reason_fees">پارەیێ قوتابخانێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="parent_council">
+                            <div class="card-content">
+                                <i class="fa-solid fa-users-rays icon-parent-council" style="color: #8b5cf6;"></i>
+                                <span data-i18n="reason_parent_council">جڤاتا سمیانان</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="exam_schedule">
+                            <div class="card-content">
+                                <i class="fa-solid fa-calendar-check icon-exam-schedule" style="color: #ec4899;"></i>
+                                <span data-i18n="reason_exam_schedule">خشتەیێ ئەزموونان</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="document_missing">
+                            <div class="card-content">
+                                <i class="fa-solid fa-file-circle-xmark icon-document-missing" style="color: #ef4444;"></i>
+                                <span data-i18n="reason_document_missing">کێماسی د بەلگەنامەیان دا</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="excellent_project">
+                            <div class="card-content">
+                                <i class="fa-solid fa-lightbulb icon-excellent-project" style="color: #eab308;"></i>
+                                <span data-i18n="reason_excellent_project">پرۆژەیێ نایاب</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="activity">
+                            <div class="card-content">
+                                <i class="fa-solid fa-masks-theater icon-activity" style="color: #14b8a6;"></i>
+                                <span data-i18n="reason_activity">پشکداریکرن د چالاکیەکێ دا</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="late_pickup">
+                            <div class="card-content">
+                                <i class="fa-solid fa-car-side icon-late-pickup" style="color: #f97316;"></i>
+                                <span data-i18n="reason_late_pickup">درەنگ وەرگرتنا قوتابی</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="reason" value="bus_issue">
+                            <div class="card-content">
+                                <i class="fa-solid fa-van-shuttle icon-bus-issue" style="color: #64748b;"></i>
+                                <span data-i18n="reason_bus_issue">کێشە د ڤەگوهاستنێ دا</span>
+                            </div>
+                        </label>
+                        </div> <!-- End Student Reasons -->
+
+                        <!-- Teacher Reasons -->
+                        <div class="radio-grid" id="teacherReasonsGrid" style="display: none; max-height: 350px; overflow-y: auto; padding-left: 5px; margin: 0;">
+                            <label class="reason-card">
+                                <input type="radio" name="teacher_reason" value="t_absence" checked>
+                                <div class="card-content">
+                                    <i class="fa-solid fa-person-walking-arrow-right icon-absence"></i>
+                                    <span data-i18n="reason_t_absence">ئامادەنەبوون</span>
+                                </div>
+                            </label>
+                            <label class="reason-card">
+                                <input type="radio" name="teacher_reason" value="t_late">
+                                <div class="card-content">
+                                    <i class="fa-solid fa-clock-rotate-left icon-late" style="color: #f97316;"></i>
+                                    <span data-i18n="reason_t_late">درەنگ کەفتن</span>
+                                </div>
+                            </label>
+                            <label class="reason-card">
+                                <input type="radio" name="teacher_reason" value="t_meeting">
+                                <div class="card-content">
+                                    <i class="fa-solid fa-users icon-meeting" style="color: #6366f1;"></i>
+                                    <span data-i18n="reason_t_meeting">بانگهێشتنا جڤینێ</span>
+                                </div>
+                            </label>
+                            <label class="reason-card">
+                                <input type="radio" name="teacher_reason" value="t_duty">
+                                <div class="card-content">
+                                    <i class="fa-solid fa-clipboard-user icon-duty" style="color: #10b981;"></i>
+                                    <span data-i18n="reason_t_duty">ئەرکێ چاڤدێریێ</span>
+                                </div>
+                            </label>
+                            <label class="reason-card">
+                                <input type="radio" name="teacher_reason" value="t_thanks">
+                                <div class="card-content">
+                                    <i class="fa-solid fa-award icon-reward" style="color: #eab308;"></i>
+                                    <span data-i18n="reason_t_thanks">سوپاس و پێزانین</span>
+                                </div>
+                            </label>
+                            <label class="reason-card">
+                                <input type="radio" name="teacher_reason" value="t_violation">
+                                <div class="card-content">
+                                    <i class="fa-solid fa-triangle-exclamation icon-bad" style="color: #ef4444;"></i>
+                                    <span data-i18n="reason_t_violation">پێشێلکرنا رێنمایان</span>
+                                </div>
+                            </label>
+                            <label class="reason-card">
+                                <input type="radio" name="teacher_reason" value="t_grades">
+                                <div class="card-content">
+                                    <i class="fa-solid fa-file-signature icon-books" style="color: #3b82f6;"></i>
+                                    <span data-i18n="reason_t_grades">رادەستکرنا نمرەیان</span>
+                                </div>
+                            </label>
+                            <label class="reason-card">
+                                <input type="radio" name="teacher_reason" value="t_notice">
+                                <div class="card-content">
+                                    <i class="fa-solid fa-circle-info icon-info" style="color: #06b6d4;"></i>
+                                    <span data-i18n="reason_t_notice">ئاگەهداری پێدڤی</span>
+                                </div>
+                            </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_exam_questions">
+                            <div class="card-content">
+                                <i class="fa-solid fa-file-circle-question icon-exam-questions" style="color: #ec4899;"></i>
+                                <span data-i18n="reason_t_exam_questions">رادەستکرنا پرسیارێن ئەزموونان</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_lesson_plan">
+                            <div class="card-content">
+                                <i class="fa-solid fa-book-open icon-lesson-plan" style="color: #8b5cf6;"></i>
+                                <span data-i18n="reason_t_lesson_plan">پلانا وانەیێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_class_management">
+                            <div class="card-content">
+                                <i class="fa-solid fa-chalkboard-user icon-class-management" style="color: #10b981;"></i>
+                                <span data-i18n="reason_t_class_management">رێڤەبرنا پۆلێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_parent_meeting">
+                            <div class="card-content">
+                                <i class="fa-solid fa-handshake-angle icon-parent-meeting" style="color: #3b82f6;"></i>
+                                <span data-i18n="reason_t_parent_meeting">دیدار دگەل سمیانان</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_training">
+                            <div class="card-content">
+                                <i class="fa-solid fa-person-chalkboard icon-training" style="color: #f59e0b;"></i>
+                                <span data-i18n="reason_t_training">خولا راهێنانێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_activity_supervision">
+                            <div class="card-content">
+                                <i class="fa-solid fa-masks-theater icon-activity-supervision" style="color: #14b8a6;"></i>
+                                <span data-i18n="reason_t_activity_supervision">سەرپەرشتیا چالاکیەکێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_student_issue">
+                            <div class="card-content">
+                                <i class="fa-solid fa-user-xmark icon-student-issue" style="color: #ef4444;"></i>
+                                <span data-i18n="reason_t_student_issue">کێشەیا قوتابیەکێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_excellent_performance">
+                            <div class="card-content">
+                                <i class="fa-solid fa-star icon-excellent-performance" style="color: #eab308;"></i>
+                                <span data-i18n="reason_t_excellent_performance">ئاستێ نایاب د وانەگوتنێ دا</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_leave_early">
+                            <div class="card-content">
+                                <i class="fa-solid fa-person-walking-arrow-right icon-leave-early" style="color: #f97316;"></i>
+                                <span data-i18n="reason_t_leave_early">دەرکەفتنا زوو</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_schedule_change">
+                            <div class="card-content">
+                                <i class="fa-solid fa-calendar-day icon-schedule-change" style="color: #6366f1;"></i>
+                                <span data-i18n="reason_t_schedule_change">گوهۆڕین د خشتەیێ وانەیان دا</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_supplies">
+                            <div class="card-content">
+                                <i class="fa-solid fa-box-open icon-supplies" style="color: #64748b;"></i>
+                                <span data-i18n="reason_t_supplies">کێماسی د پێداویستیان دا</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_technology">
+                            <div class="card-content">
+                                <i class="fa-solid fa-laptop-code icon-technology" style="color: #06b6d4;"></i>
+                                <span data-i18n="reason_t_technology">بکارئینانا ئامرازێن فێرکرنێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_cooperation">
+                            <div class="card-content">
+                                <i class="fa-solid fa-people-arrows icon-cooperation" style="color: #10b981;"></i>
+                                <span data-i18n="reason_t_cooperation">هەڤکاری دگەل هەڤکاران</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_committee">
+                            <div class="card-content">
+                                <i class="fa-solid fa-people-group icon-committee" style="color: #3b82f6;"></i>
+                                <span data-i18n="reason_t_committee">جڤینا کۆمیتەیێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_celebration">
+                            <div class="card-content">
+                                <i class="fa-solid fa-cake-candles icon-celebration" style="color: #ec4899;"></i>
+                                <span data-i18n="reason_t_celebration">ئاهەنگا قوتابخانێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_vacation_approval">
+                            <div class="card-content">
+                                <i class="fa-solid fa-check-double icon-vacation-approval" style="color: #10b981;"></i>
+                                <span data-i18n="reason_t_vacation_approval">پەسەندکرنا دەستویریێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_vacation_rejection">
+                            <div class="card-content">
+                                <i class="fa-solid fa-xmark icon-vacation-rejection" style="color: #ef4444;"></i>
+                                <span data-i18n="reason_t_vacation_rejection">رەتکرنا دەستویریێ</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_evaluation">
+                            <div class="card-content">
+                                <i class="fa-solid fa-chart-line icon-evaluation" style="color: #3b82f6;"></i>
+                                <span data-i18n="reason_t_evaluation">هەلسەنگاندنا ئاستی</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_warning">
+                            <div class="card-content">
+                                <i class="fa-solid fa-circle-exclamation icon-warning" style="color: #f59e0b;"></i>
+                                <span data-i18n="reason_t_warning">تێبینی و هۆشداری</span>
+                            </div>
+                        </label>
+                        <label class="reason-card">
+                            <input type="radio" name="teacher_reason" value="t_emergency">
+                            <div class="card-content">
+                                <i class="fa-solid fa-truck-medical icon-emergency" style="color: #dc2626;"></i>
+                                <span data-i18n="reason_t_emergency">رەوشا ژنیشکێڤە</span>
+                            </div>
+                        </label>
+                        </div> <!-- End Teacher Reasons -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <!-- Manage Students Modal -->
+    <div id="manageStudentsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeManageModal">&times;</span>
+            <h2 data-i18n="modal_manage_title"><i class="fa-solid fa-users-gear"></i> رێڤەبرنا قوتابیان</h2>
+            
+            <div class="modal-tabs">
+                <button class="tab-btn active" id="tabAddSingle" data-i18n="tab_add_single">زێدەکرنا ئێک قوتابی</button>
+                <button class="tab-btn" id="tabAddBulk" data-i18n="tab_add_bulk">زێدەکرنا ب کۆمەل (Excel)</button>
+            </div>
+
+            <div id="panelAddSingle" class="tab-panel active">
+                <div class="form-group">
+                    <input type="text" id="newStudentName" data-i18n-ph="ph_student_name" placeholder="اسم الطالب">
+                    <input type="text" id="newStudentClass" data-i18n-ph="ph_student_class" placeholder="الصف">
+                    <input type="text" id="newStudentSection" data-i18n-ph="ph_student_section" placeholder="الشعبة">
+                    <input type="text" id="newStudentNumber" data-i18n-ph="ph_parent_number" placeholder="رقم ولی الأمر">
+                    <button id="saveSingleStudentBtn" class="primary-btn mt-1" data-i18n="btn_save">پاشەکەوتکرن</button>
+                </div>
+            </div>
+
+            <div id="panelAddBulk" class="tab-panel" style="display: none;">
+                <p class="hint-text" data-i18n="hint_excel">پێزانینێن قوتابیان ژ ئێکسلێ کۆپی بکە و ل ڤێرێ پەیست بکە. (ناڤ، پۆل، هۆبە، ژمارە)</p>
+                <div class="row-group" id="bulkClassSectionGroup" style="margin-bottom: 1rem;">
+                    <div class="form-group">
+                        <input type="text" id="bulkDefaultClass" data-i18n-ph="ph_student_class" placeholder="الصف (اختیاری للجمیع)">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="bulkDefaultSection" data-i18n-ph="ph_student_section" placeholder="الشعبة (اختیاری للجمیع)">
+                    </div>
+                </div>
+                <textarea id="bulkExcelData" rows="6" placeholder="أحمد محمد\tالسابع\tأ\t+964..."></textarea>
+                <button id="saveBulkStudentsBtn" class="primary-btn mt-1" data-i18n="btn_save_bulk">پاشەکەوتکرنا کۆمەڵێ</button>
+            </div>
+
+            <div class="students-list-container">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 data-i18n="title_saved_students">قوتابیێن پاشەکەوتکری:</h3>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button id="deleteSelectedBtn" class="danger-btn" style="padding: 0.5rem 1rem; font-size: 0.9rem; display: none;" data-i18n="btn_delete_selected">سڕینا یێن دیارکری</button>
+                        <button id="deleteAllBtn" class="danger-btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;" data-i18n="btn_delete_all">سڕینا هەمیان</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table id="studentsTable">
+                        <thead>
+                            <tr>
+                                <th style="width: 40px; text-align: center;"><input type="checkbox" id="selectAllTableCheckbox"></th>
+                                <th data-i18n="th_name">ناڤ</th>
+                                <th data-i18n="th_class">پۆل</th>
+                                <th data-i18n="th_section">هۆبە</th>
+                                <th data-i18n="th_number">ژمارە</th>
+                                <th data-i18n="th_action">کردار</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentsTableBody">
+                            <!-- Rows -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bulk Select Modal -->
+    <div id="bulkSelectModal" class="modal">
+        <div class="modal-content modal-sm">
+            <span class="close-btn" id="closeBulkModal">&times;</span>
+            <h2 data-i18n="modal_bulk_title"><i class="fa-solid fa-list-check"></i> تحدید مجموعة طلاب</h2>
+            
+            <div class="search-box" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                <input type="text" id="searchBulk" data-i18n-ph="ph_search" placeholder="ابحث عن طالب، صف..." style="flex: 1; margin-bottom: 0;">
+                <button id="selectAllFilteredBtn" class="secondary-btn" style="white-space: nowrap; padding: 0.5rem 1rem;">تحدید الکل</button>
+            </div>
+
+            <div class="bulk-list" id="bulkListContainer">
+                <!-- Checkboxes -->
+            </div>
+
+            <div class="modal-footer">
+                <span id="selectedCountMsg">0 طلاب محددین</span>
+                <button id="confirmBulkBtn" class="primary-btn" data-i18n="btn_confirm">پەسەندکرن</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Queue Modal -->
+    <div id="queueModal" class="modal">
+        <div class="modal-content modal-sm text-center">
+            <h2 data-i18n="modal_queue_title"><i class="fa-solid fa-paper-plane"></i> جاری الإرسال الجماعی</h2>
+            
+            <div class="queue-progress">
+                <p id="queueProgressText">رسالة 1 من 50</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="queueProgressBar"></div>
+                </div>
+            </div>
+
+            <div class="queue-student-info">
+                <h3 id="queueStudentName">اسم الطالب</h3>
+            </div>
+
+            <div class="queue-actions">
+                <button id="queueSendBtn" class="send-btn"><i class="fa-brands fa-whatsapp"></i> إرسال عبر واتساب</button>
+                <button id="queueNextBtn" class="secondary-btn" disabled>التالی <i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+            
+            <button id="queueCancelBtn" class="danger-btn mt-1">إلغاء الإرسال</button>
+        </div>
+    </div>
+
+    <!-- Custom Dialog Modal -->
+    <div id="customDialogModal" class="modal">
+        <div class="modal-content modal-sm text-center">
+            <h2 id="customDialogTitle"><i class="fa-solid fa-bell"></i> <span id="customDialogTitleText">تنبیه</span></h2>
+            <p id="customDialogMessage" style="margin: 1.5rem 0; font-size: 1.1rem;"></p>
+            <div class="modal-footer" style="justify-content: center; gap: 1rem; border-top: none; margin-top: 0; padding-top: 0;">
+                <button id="customDialogConfirmBtn" class="primary-btn">موافق</button>
+                <button id="customDialogCancelBtn" class="secondary-btn" style="display: none;">إلغاء</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="students.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
