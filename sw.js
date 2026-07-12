@@ -1,4 +1,4 @@
-const CACHE_NAME = 'school-notifications-v2';
+const CACHE_NAME = 'school-notifications-v3';
 const urlsToCache = [
   './',
   './index.html',
